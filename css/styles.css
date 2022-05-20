@@ -1,3 +1,7 @@
+html {
+   scroll-behavior: smooth;
+ }
+
 /* TEXTOS */
 
 body {
@@ -6,9 +10,16 @@ body {
    overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+   font-weight: 400;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
 p {
    font-size: 16px;
    margin-bottom: 20px;
+   font-weight: 300;
 }
 
 a {
@@ -23,6 +34,16 @@ a {
    font-size: 18px;
 }
 
+::-moz-selection {
+   color: #dfc096;
+   background: #344962;
+ }
+ 
+ ::selection {
+   color: #dfc096;
+   background: #344962;
+ }
+
 
 /* HEADER */
 
@@ -31,6 +52,7 @@ header {
    background-repeat: no-repeat;
    padding: 30px;
    height: 30vh;
+   background-attachment: fixed;
 }
 
 .homepage header {
@@ -88,16 +110,30 @@ ul.menu li a {
    font-weight: 300;
    letter-spacing: 3px;
    font-size: 18px;
+   transition: all 0.3s ease-in-out;
+   display: inline-block;
 }
 
-ul.menu li a:hover {
-   border-bottom: 2px solid #fff;
+ul.menu li a::after {
+   content:'';
+   display: block;
+   width: 0px;
+   height: 2px;
+   background-color: #ffffff;
+   transition: all 0.3s ease-in-out;
+}
+
+ul.menu li a:hover::after {
+   width: 100%;
 }
 
 ul.menu li.logo a:hover {
-   border: none;
+   transform: scale(1.08);
 }
 
+ul.menu li.logo a::after {
+   display: none;
+}
 
 ul.menu-redes {
    padding: 0px;
@@ -118,6 +154,7 @@ ul.menu-redes li a {
    color: #fff;
    font-size: 25px;
    padding: 10px;
+   transition: all 0.3s ease-in-out;
 }
 
 ul.menu-redes li a:hover {
@@ -132,6 +169,11 @@ footer ul.menu-redes {
 footer ul.menu-redes li a {
    color: #dfc096;
    font-size: 30px;
+   transition: all 0.3s ease-in-out;
+}
+
+footer ul.menu-redes li a:hover {
+   color: #ffffff;
 }
 
 ul.menu-footer {
@@ -159,8 +201,17 @@ ul.menu-footer li a {
    font-size: 14px;
 }
 
-ul.menu-footer li a:hover {
-   border-bottom: 2px solid #fff;
+ul.menu-footer li a::after {
+   content:'';
+   display: block;
+   width: 0px;
+   height: 2px;
+   background-color: #ffffff;
+   transition: all 0.3s ease-in-out;
+}
+
+ul.menu-footer li a:hover::after {
+   width: 100%;
 }
 
 .logo-movil {
@@ -199,6 +250,8 @@ ul.menu-footer li a:hover {
    margin: 10px auto;
    display: table;
    border: 1px solid;
+   transition: all 0.3s ease-in-out;
+   letter-spacing: 2px;
 }
 
 .btn-azul {
@@ -259,6 +312,11 @@ div.products .products-item a {
 
 div.products .products-item a img {
    width: 100%;
+   transition: all 0.3s ease-in-out;
+}
+
+div.products .products-item a img:hover {
+   transform: scale(1.03);
 }
 
 div.products .products-item a.btn {
@@ -271,6 +329,7 @@ div.products .products-item a.btn {
    background-repeat: no-repeat;
    background-image: url('../img/bg-mission.jpg');
    background-position: top center;
+   background-attachment: fixed;
 }
 
 .mission p {
@@ -312,6 +371,13 @@ section#mission div {
    background-image: url('../img/bg-cta.jpg');
    background-position: center center;
    color: #fff;
+   display: flex;
+   min-height: 80vh;
+   background-attachment: fixed;
+}
+
+.cta-shop div  {
+   align-self: center;
 }
 
 /* ECOPRINT */
@@ -408,11 +474,11 @@ ul.icon-grid li {
    border: none;
    border-radius: 5px;
    background-color: #f5f5f5;
-   padding: 10px 15px;
+   padding: 10px 0px;
    margin-bottom: 15px;
    width: 100%;
-   display: block;
    font-family: 'Poppins';
+   text-indent: 15px;
 }
 
 #contact-form button {
@@ -447,8 +513,12 @@ a.btn-whatsapp {
    position: fixed;
    right: 30px;
    bottom: 110px;
+   transition: all 0.3s ease-in-out;
 }
 
+a.btn-whatsapp:hover {
+   transform: scale(1.08);
+}
 
 /* RESPONSIVE */
 
@@ -482,6 +552,9 @@ a.btn-whatsapp {
    ul.icon-grid li {
       padding: 0px 10px;
   }
+  header {
+      height: 50vh !important;
+   }
 }
 
 @media all and (min-width: 769px) {
@@ -539,6 +612,9 @@ a.btn-whatsapp {
    .gallery-item {
       grid-row: unset!important;
       grid-column: unset!important;
+   }
+   .w-600 {
+      max-width: 100%;
    }
    a.btn-whatsapp {
       width: 40px;

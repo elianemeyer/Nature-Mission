@@ -9,39 +9,40 @@
       <link rel="stylesheet" href="../css/styles.css">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,400&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
       <script src="https://use.fontawesome.com/6b62cee439.js"></script>
    </head>
-   <body class="contact">
+   <body class="contact animate__animated animate__fadeIn">
       <header class="txt-center">
-         <div id="toggle-menu" class="toggle-menu-movil d-movil"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
-         <nav>
+         <div id="toggle-menu" class="toggle-menu-movil d-movil wow animate__animated animate__fadeInDown"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+         <nav class="wow animate__animated animate__fadeInDown">
             <ul class="menu">
                <li class="d-movil"><a href="../index.html">Home</a></li>
                <li><a href="about.html">About</a></li>
                <li><a href="products.html">Products</a></li>
-               <li class="logo d-desk"><a href="../index.html"><img src="../img/isologo-nature-mission.png" width="115px" height="auto"></a></li>
+               <li class="logo d-desk wow animate__animated animate__pulse" data-wow-delay="1s"><a href="../index.html"><img src="../img/isologo-nature-mission.png" width="115px" height="auto"></a></li>
                <li><a href="ecoprint.html">Ecoprint</a></li>
                <li><a href="contact.html">Contact</a></li>
             </ul>
          </nav>
-         <ul class="menu-redes">
+         <ul class="menu-redes wow animate__animated animate__fadeInDown">
             <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
             <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
             <li><a href="https://www.etsy.com/es/shop/NatureMission" target="_blank"><i class="fa fa-shopping-bag"></i></a></li>
          </ul>
-         <a href="../index.html"><img class="logo-movil d-movil" src="../img/logo-nature-mission-blanco-1.png"></a>
+         <a href="../index.html"><img class="logo-movil d-movil wow animate__animated animate__pulse" data-wow-delay="1s" src="../img/logo-nature-mission-blanco-1.png"></a>
       </header>
       <main>
          <img class="img-divisor d-movil" src="../img/borde-movil.png" width="100%" height="auto">
          <img class="img-divisor d-desk" src="../img/borde.png" width="100%" height="auto">
          <section class="p-30 txt-center">
-            <h1>Contact</h1>
-            <p class="txt-big w-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <form class="w-600" id="contact-form" action="" method="" enctype="">
+            <h1 class="wow animate__animated animate__fadeIn">Contact</h1>
+            <p class="txt-big w-600 wow animate__animated animate__fadeIn" data-wow-delay="0.5s">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <form id="contact-form" class="w-600 wow animate__animated animate__fadeIn" data-wow-delay="1s" action="" method="" enctype="">
                <input type="text" id="name" name="name" value="" placeholder="Your Name">
                <input type="email" id="mail" placeholder="E-mail">
                <textarea name="message" id="message" cols="20" rows="5" placeholder="Your message"></textarea>
-               <button class="btn btn-azul" type="submit">Send</button>
+               <button class="btn btn-azul wow animate__animated animate__fadeInUp" data-wow-delay="1.5s" type="submit">Send</button>
             </form>
          </section>
       </main>
@@ -70,5 +71,9 @@
             });
          });
       </script>   
+            <script src="../js/wow.min.js"></script>
+            <script>
+               new WOW().init();
+            </script>
    </body>
 </html>

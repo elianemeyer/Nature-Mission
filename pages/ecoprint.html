@@ -9,61 +9,62 @@
       <link rel="stylesheet" href="../css/styles.css">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,400&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
       <script src="https://use.fontawesome.com/6b62cee439.js"></script>
    </head>
-   <body class="ecoprint">
+   <body class="ecoprint animate__animated animate__fadeIn">
       <header class="txt-center">
-         <div id="toggle-menu" class="toggle-menu-movil d-movil"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
-         <nav>
+         <div id="toggle-menu" class="toggle-menu-movil d-movil wow animate__animated animate__fadeInDown"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+         <nav class="wow animate__animated animate__fadeInDown">
             <ul class="menu">
                <li class="d-movil"><a href="../index.html">Home</a></li>
                <li><a href="about.html">About</a></li>
                <li><a href="products.html">Products</a></li>
-               <li class="logo d-desk"><a href="../index.html"><img src="../img/isologo-nature-mission.png" width="115px" height="auto"></a></li>
+               <li class="logo d-desk wow animate__animated animate__pulse" data-wow-delay="1s"><a href="../index.html"><img src="../img/isologo-nature-mission.png" width="115px" height="auto"></a></li>
                <li><a href="ecoprint.html">Ecoprint</a></li>
                <li><a href="contact.html">Contact</a></li>
             </ul>
          </nav>
-         <ul class="menu-redes">
+         <ul class="menu-redes wow animate__animated animate__fadeInDown">
             <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
             <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
             <li><a href="https://www.etsy.com/es/shop/NatureMission" target="_blank"><i class="fa fa-shopping-bag"></i></a></li>
          </ul>
-         <a href="../index.html"><img class="logo-movil d-movil" src="../img/logo-nature-mission-blanco-1.png"></a>
+         <a href="../index.html"><img class="logo-movil d-movil wow animate__animated animate__pulse" data-wow-delay="1s" src="../img/logo-nature-mission-blanco-1.png"></a>
       </header>
       <main>
          <img class="img-divisor d-movil" src="../img/borde-movil.png" width="100%" height="auto">
          <img class="img-divisor d-desk" src="../img/borde.png" width="100%" height="auto">
          <section class="p-30 txt-center">
-            <h1>Ecoprint</h1>
+            <h1 class="wow animate__animated animate__fadeIn" data-wow-offset="200">Ecoprint</h1>
             <ul class="icon-grid p-30">
-               <li>
+               <li class="wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
                   <img src="../img/icons/landscape.png" width="100px" height="auto">
                   <p class="txt-big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus sint illo fuga unde.</p>
                </li>
-               <li>
+               <li class="wow animate__animated animate__fadeIn" data-wow-delay="1s">
                   <img src="../img/icons/cooked.png" width="100px" height="auto">
                   <p class="txt-big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus sint illo fuga unde.</p>
                </li>
-               <li>
+               <li class="wow animate__animated animate__fadeIn" data-wow-delay="1.5s">
                   <img src="../img/icons/print.png" width="100px" height="auto">
                   <p class="txt-big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus sint illo fuga unde.</p>
                </li>
             </ul>
-            <h2>How the magic happens...</h2>
+            <h2 class="wow animate__animated animate__fadeIn" data-wow-offset="200">How the magic happens...</h2>
 
-            <video width="300" height="600" controls mute autoplay>
+            <video class="wow animate__animated animate__fadeInUp" data-wow-offset="200" width="300" height="600" controls mute autoplay>
                <source src="../video/ecoprint-1.mp4" type="video/mp4">
              Your browser does not support the video tag.
              </video>
-             <video class="p-30" width="300" height="600" controls mute autoplay>
+             <video class="wow animate__animated animate__fadeInUp p-30" data-wow-offset="200" width="300" height="600" controls mute autoplay>
                <source src="../video/ecoprint-2.mp4" type="video/mp4">
              Your browser does not support the video tag.
              </video>
 
-            <h2>Step by step</h2>
+            <h2 class="wow animate__animated animate__fadeIn" data-wow-offset="200" >And voilà!</h2>
 
-            <div class="gallery">
+            <div class="gallery wow animate__animated animate__fadeIn">
                <div class="gallery-item">
                   <img src="../img/ecoprint/products_0012_17.jpg">
                </div>
@@ -116,5 +117,9 @@
             });
          });
       </script>   
+            <script src="../js/wow.min.js"></script>
+            <script>
+               new WOW().init();
+            </script>
    </body>
 </html>
