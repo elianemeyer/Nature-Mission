@@ -1,6 +1,8 @@
-$blue: #344962;
-$beige: #dfc096;
-$light-beige: #f4e1c7;
+$primary-color: #344962;
+$secondary-color: #dfc096;
+$light-bg-1: #f4e1c7;
+$light-bg-2: #f5f5f5;
+$focus-box-shadow: 0 0 0 0.25rem rgba(41, 69, 102, 0.6);
 
 $font-family: "Poppins", Arial, Helvetica, sans-serif;
 
@@ -46,13 +48,13 @@ a {
 }
 
 ::-moz-selection {
-  color: $beige;
-  background: $blue;
+  color: $secondary-color;
+  background: $primary-color;
 }
 
 ::selection {
-  color: $beige;
-  background: $blue;
+  color: $secondary-color;
+  background: $primary-color;
 }
 
 /* HEADER */
@@ -60,8 +62,8 @@ a {
 header {
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 30px;
   height: 30vh;
+  min-height: 450px;
   background-attachment: fixed;
 }
 
@@ -102,13 +104,11 @@ header {
   width: 45px;
 }
 
-ul.menu {
+ul.navbar-nav {
   padding: 0px;
 
-  li {
-    list-style: none;
-    display: inline-block;
-    vertical-align: middle;
+  li.nav-item {
+    align-self: center;
     padding: 5px;
     width: 150px;
 
@@ -122,16 +122,16 @@ ul.menu {
       display: inline-block;
 
       &::after {
-        content: "";
-        display: block;
-        width: 0px;
-        height: 2px;
-        background-color: #ffffff;
-        transition: all 0.3s ease-in-out;
+          content: "";
+          display: block;
+          width: 0px;
+          height: 2px;
+          background-color: #ffffff;
+          transition: all 0.3s ease-in-out;
+      }
 
-        &:hover::after {
-          width: 100%;
-        }
+      &:hover::after {
+        width: 100%;
       }
     }
   }
@@ -152,13 +152,26 @@ ul.menu-redes {
   padding: 0px;
   margin: 0px 25px;
   position: absolute;
+  li {
+    display: inline-block;
+    list-style: none;
+      a {
+        color: #fff;
+        font-size: 25px;
+        padding: 10px;
+        transition: all 0.3s ease-in-out;
+          &:hover {
+            color: $secondary-color;
+          }
+    }
+  }
 }
 
 header ul.menu-redes {
   right: 0;
   top: 30px;
   li {
-    display: inline-block;
+
     a {
       color: #fff;
       font-size: 25px;
@@ -166,7 +179,7 @@ header ul.menu-redes {
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        color: $beige;
+        color: $secondary-color;
       }
     }
   }
@@ -177,12 +190,13 @@ footer ul.menu-redes {
   bottom: 45px;
 
   li {
+
     a {
-      color: $beige;
+      color: $secondary-color;
       font-size: 30px;
       transition: all 0.3s ease-in-out;
 
-      &a:hover {
+      &:hover {
         color: #ffffff;
       }
     }
@@ -238,44 +252,48 @@ ul.menu-footer {
   margin-top: -45px;
   position: absolute;
   left: 0;
-  width: 101%;
+  width: 100%;
 }
 
 .img-divisor-2 {
   margin-top: -1px;
   position: absolute;
   left: 0;
-  width: 101%;
+  width: 100%;
 }
 
 .bg-color-amarillo {
-  background-color: $light-beige;
+  background-color: $light-bg-1;
 }
 
 .bg-color-azul {
-  background-color: $blue;
+  background-color: $primary-color;
 }
 
 .btn {
   text-transform: uppercase;
   padding: 8px 25px;
   border-radius: 5px;
-  margin: 10px auto;
+  margin: 20px auto;
   display: table;
   border: 1px solid;
   transition: all 0.3s ease-in-out;
   letter-spacing: 2px;
+
+  &:focus {
+      box-shadow: $focus-box-shadow;
+  } 
 }
 
 .btn-azul {
-  background-color: $blue;
+  background-color: $primary-color;
   color: #fff;
-  border-color: $blue;
+  border-color: $primary-color;
 
   &:hover {
-    background-color: $beige;
-    color: $blue;
-    border-color: $beige;
+    background-color: $secondary-color;
+    color: $primary-color;
+    border-color: $secondary-color;
   }
 }
 
@@ -308,14 +326,8 @@ ul.menu-footer {
 /* HOME */
 
 div.products {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 60px auto;
 
   .products-item {
-    width: 360px;
 
     a {
       display: block;
@@ -466,16 +478,16 @@ ul.icon-grid {
   textarea {
     border: none;
     border-radius: 5px;
-    background-color: #f5f5f5;
-    padding: 10px 0px;
-    margin-bottom: 15px;
-    width: 100%;
+    background-color: $light-bg-2;
     font-family: $font-family;
-    text-indent: 15px;
+    font-size: 14px;
+
+    &:focus {
+      box-shadow: $focus-box-shadow;
+    } 
   }
 
   button {
-    margin: 40px auto;
     font-family: $font-family;
     font-size: 16px;
   }
@@ -519,6 +531,7 @@ a.btn-whatsapp {
 @media all and (max-width: 768px) {
    header {
       height: 50vh !important;
+      min-height: 300px;
    }
   .d-desk {
     display: none !important;
@@ -527,10 +540,9 @@ a.btn-whatsapp {
     position: absolute;
     width: 100%;
     left: 0;
-    background: $blue;
+    background: $primary-color;
     z-index: 1;
-    top: 90px;
-    display: none;
+    top: 0px;
   }
   ul.menu {
       li {

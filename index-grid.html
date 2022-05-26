@@ -6,53 +6,48 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
       <title>Nature Mission</title>
       <link rel="icon" type="image/png" href="./img/isologo-nature-mission.png">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="./css/styles.css">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,400&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
       <script src="https://use.fontawesome.com/6b62cee439.js"></script>
-      <link rel="stylesheet" href="./css/styles.css">
    </head>
    <body class="homepage animate__animated animate__fadeIn">
-      <header class="text-center">
-         <nav class="navbar navbar-dark navbar-expand-md wow animate__animated animate__fadeInDown">
-            <div class="container-fluid">
-            <button class="navbar-toggler wow animate__animated animate__fadeInDown" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarMain">
-               <ul class="menu navbar-nav">
-                  <li class="nav-item d-movil"><a href="index.html">Home</a></li>
-                  <li class="nav-item"><a href="./pages/about.html">About</a></li>
-                  <li class="nav-item"><a href="./pages/products.html">Products</a></li>
-                  <li class="nav-item logo d-none d-md-block wow animate__animated animate__pulse" data-wow-delay="1s"><a href="index.html"><img src="./img/isologo-nature-mission.png" width="115px" height="auto"></a></li>
-                  <li class="nav-item"><a href="./pages/ecoprint.html">Ecoprint</a></li>
-                  <li class="nav-item"><a href="./pages/contact.html">Contact</a></li>
-               </ul>
-            </div>
-            <ul class="menu-redes wow animate__animated animate__fadeInDown">
-               <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-               <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-               <li><a href="https://www.etsy.com/es/shop/NatureMission" target="_blank"><i class="fa fa-shopping-bag"></i></a></li>
+      <header class="txt-center">
+         <div id="toggle-menu" class="toggle-menu-movil d-movil wow animate__animated animate__fadeInDown"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+         <nav class="wow animate__animated animate__fadeInDown">
+            <ul class="menu">
+               <li class="d-movil"><a href="index.html">Home</a></li>
+               <li><a href="./pages/about.html">About</a></li>
+               <li><a href="./pages/products.html">Products</a></li>
+               <li class="logo d-desk wow animate__animated animate__pulse" data-wow-delay="1s"><a href="index.html"><img src="./img/isologo-nature-mission.png" width="115px" height="auto"></a></li>
+               <li><a href="./pages/ecoprint.html">Ecoprint</a></li>
+               <li><a href="./pages/contact.html">Contact</a></li>
             </ul>
          </nav>
-         <img class="wow animate__animated animate__fadeIn animate__pulse" data-wow-delay="1s" style="margin-top: 60px; max-width: 80%;" src="./img/logo-nature-mission-blanco.png" width="650px" height="auto">
+         <ul class="menu-redes wow animate__animated animate__fadeInDown">
+            <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.etsy.com/es/shop/NatureMission" target="_blank"><i class="fa fa-shopping-bag"></i></a></li>
+         </ul>
+         <a href="index.html"><img class="logo-movil d-movil wow animate__animated animate__pulse" data-wow-delay="1s" src="./img/logo-nature-mission-blanco-1.png"></a>
+         <img class="d-desk wow animate__animated animate__fadeIn animate__pulse" data-wow-delay="1s" style="margin-top: 60px;" src="./img/logo-nature-mission-blanco.png" width="650px" height="auto">
       </header>
-      <main class="container-fluid">
+      <main>
          <img class="img-divisor d-movil" src="./img/borde-movil.png" width="100%" height="auto">
-         <img class="img-divisor d-none d-md-block" src="./img/borde.png" width="100%" height="auto">
-         <section class="row p-5 text-center">
-            <img class="d-block mx-auto wow animate__animated animate__fadeIn" data-wow-offset="150" src="./img/icons/hands.svg" style="width:80px;">
+         <img class="img-divisor d-desk" src="./img/borde.png" width="100%" height="auto">
+         <section class="p-30 txt-center">
+            <img class="wow animate__animated animate__fadeIn" data-wow-offset="150" src="./img/icons/hands.svg" width="60px" height="auto">
             <h1 class="wow animate__animated animate__fadeIn" data-wow-offset="100">Ethical & Sustainable</h1>
             <p class="txt-big wow animate__animated animate__fadeIn" data-wow-offset="100">Mindfully printed textiles for one of a kind designs</p>
          </section>
          <img class="img-divisor-2 d-movil" src="./img/borde-2-movil.png" width="100%" height="auto">
-         <img class="img-divisor-2 d-none d-md-block" src="./img/borde-2.png" width="100%" height="auto">
-         <section class="row about text-center bg-color-amarillo">
-            <div class="col-md-5 px-0">
+         <img class="img-divisor-2 d-desk" src="./img/borde-2.png" width="100%" height="auto">
+         <section class="about txt-center bg-color-amarillo">
+            <div class="w-45">
                <img src="./img/nana-sanz.jpg" width="100%" height="auto">
             </div>
-            <div class="col-md-7 p-5">
+            <div class="w-55 p-50">
                <div  class="w-600">
                   <h2 class="wow animate__animated animate__fadeIn" data-wow-delay="0.5s">Hello :)  I'm Nana Sanz</h2>
                   <p class="wow animate__animated animate__fadeIn" data-wow-delay="0.5s">When I discovered the art of ecoprinting, I was so amazed with the idea that I could print using plants; I just had to spend some time walking through nature, identifying leaves, foraging, and playing with them to create beautiful compositions.</p>
@@ -63,29 +58,29 @@
             </div>
          </section>
          <img class="img-divisor d-movil" src="./img/borde-movil.png" width="100%" height="auto">
-         <img class="img-divisor d-none d-md-block" src="./img/borde.png" width="100%" height="auto">
-         <section class="row p-5 text-center">
-            <h2 class="wow animate__animated animate__fadeIn mt-5" data-wow-offset="150">Discover The Art of Ecoprinting</h2>
+         <img class="img-divisor d-desk" src="./img/borde.png" width="100%" height="auto">
+         <section class="p-30 txt-center">
+            <h2 class="wow animate__animated animate__fadeIn" data-wow-offset="150">Discover The Art of Ecoprinting</h2>
             <p class="w-600 wow animate__animated animate__fadeIn" data-wow-offset="100">I develop my artwork in forms of textile art pieces, home decoration and clothing, but possibilities are endless for an inquisitive mind.</p>
-            <div class="products row mx-auto my-5">
-               <div class="col-md-4 products-item wow animate__animated animate__fadeIn">
+            <div class="products">
+               <div class="products-item wow animate__animated animate__fadeIn">
                   <a href="./pages/products.html#textile-art"><img src="./img/textile-art.jpg"></a>
                   <a class="btn btn-azul" href="./pages/products.html#textile-art">Textile Art</a>
                </div>
-               <div class="col-md-4 products-item wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+               <div class="products-item wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
                   <a href="./pages/products.html#home-deco"><img src="./img/home-deco.jpg"></a>
                   <a class="btn btn-azul" href="./pages/products.html#home-deco">Home Deco</a>
                </div>
-               <div class="col-md-4 products-item wow animate__animated animate__fadeIn" data-wow-delay="1s">
+               <div class="products-item wow animate__animated animate__fadeIn" data-wow-delay="1s">
                   <a href="./pages/products.html#clothing"><img src="./img/clothing.jpg"></a>
                   <a class="btn btn-azul" href="./pages/products.html#clothing">Clothing</a>
                </div>
             </div>
          </section>
          <img class="img-divisor-2 d-movil" src="./img/borde-2-movil.png" width="100%" height="auto">
-         <img class="img-divisor-2 d-none d-md-block" src="./img/borde-2.png" width="100%" height="auto">
-         <section class="row mission text-center p-5">
-            <div class="col-12 w-600 p-5 wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+         <img class="img-divisor-2 d-desk" src="./img/borde-2.png" width="100%" height="auto">
+         <section class="mission txt-center p-50">
+            <div class="w-600 p-50 wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
                <p class="txt-big">Nature Mission is a connection with nature.</p>
                <p class="txt-big"> A challenge to go back to the roots,
                   to experience with traditional dying methods.
@@ -96,11 +91,11 @@
                <p class="txt-big">  A whisper coming from the heart:
                   Care for people, protect the earth.
                </p>
-               <a class="btn btn-azul wow animate__animated animate__fadeInUp" data-wow-delay="0.5s" href="pages/about.html#mission">Learn More About My Mission</a>
+               <a class="btn btn-azul wow animate__animated animate__fadeInUp" data-wow-delay="1s" href="pages/about.html#mission">Learn More About My Mission</a>
             </div>
          </section>
       </main>
-      <footer class="p-5 text-center bg-color-azul">
+      <footer class="p-30 text-center bg-color-azul">
          <a class="logo-footer" href="index.html"><img class="wow animate__animated animate__fadeIn" src="./img/logo-nature-mission-variante-1.png" width="300px" height="auto"></a>
          <ul class="menu-footer wow animate__animated animate__fadeInDown">
             <li><a href="index.html">Home</a></li>
@@ -115,8 +110,14 @@
          </ul>
          <a class="btn-whatsapp  wow animate__animated animate__fadeInBottomRight" href="#" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
       </footer>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script> 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
+      <script>
+         $( "#toggle-menu" ).click(function() {
+            $( "nav" ).toggle( "slow", function() {
+               // Animation complete.
+            });
+         });
+      </script>   
       <script src="js/wow.min.js"></script>
       <script>
          new WOW().init();
