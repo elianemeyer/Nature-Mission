@@ -64,6 +64,7 @@ header {
   background-repeat: no-repeat;
   height: 30vh;
   min-height: 450px;
+  max-height: 530px;
   background-attachment: fixed;
 }
 
@@ -104,6 +105,15 @@ header {
   width: 45px;
 }
 
+.navbar-brand {
+  margin-bottom: -60px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
+
 ul.navbar-nav {
   padding: 0px;
 
@@ -131,6 +141,11 @@ ul.navbar-nav {
       }
 
       &:hover::after {
+        width: 100%;
+      }
+    }
+    a.active {
+      &:hover::after, &::after  {
         width: 100%;
       }
     }
@@ -528,7 +543,7 @@ a.btn-whatsapp {
 
 /* RESPONSIVE */
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1024px) {
    header {
       height: 50vh !important;
       min-height: 300px;
@@ -551,6 +566,18 @@ a.btn-whatsapp {
          width: unset;
       }
    }
+   header ul.menu-redes {
+    top: unset;
+    margin: 0px 10px;
+    li {
+  
+      a {
+        color: rgba(255,255,255,0.75);
+        font-size: 18px;
+        padding: 5px;
+      }
+    }
+  }
   .img-divisor {
     margin-top: -30px;
   }
