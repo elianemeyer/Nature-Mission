@@ -1,0 +1,20 @@
+$header: (
+    home: url("../img/bg-home.jpg"),
+    about:  url("../img/bg-about.jpg"),
+    products:  url("../img/bg-products.jpg"),
+    ecoprint:  url("../img/bg-ecoprint.jpg"),
+    contact:  url("../img/bg-contact.jpg")
+);
+
+
+@each $page, $bg-image in $header {
+    .#{$page} header {
+      background-image: $bg-image;
+    }
+  }
+
+$btn: (
+        background-color: $secondary-color,
+        color: $primary-color,
+        border-color: $secondary-color,
+)  

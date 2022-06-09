@@ -1,10 +1,6 @@
-$primary-color: #344962;
-$secondary-color: #dfc096;
-$light-bg-1: #f4e1c7;
-$light-bg-2: #f5f5f5;
-$focus-box-shadow: 0 0 0 0.25rem rgba(41, 69, 102, 0.6);
-
-$font-family: "Poppins", Arial, Helvetica, sans-serif;
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'maps.scss';
 
 html {
   scroll-behavior: smooth;
@@ -66,37 +62,14 @@ header {
   min-height: 450px;
   max-height: 530px;
   background-attachment: fixed;
+  background-position: center center;
+  min-height: 300px;
 }
 
-.homepage header {
-  background-image: url("../img/bg-home.jpg");
-  background-position: center center;
+.home header {
   height: 70vh;
 }
 
-.about header {
-  background-image: url("../img/bg-about.jpg");
-  background-position: center center;
-  min-height: 300px;
-}
-
-.products header {
-  background-image: url("../img/bg-products.jpg");
-  background-position: center center;
-  min-height: 300px;
-}
-
-.ecoprint header {
-  background-image: url("../img/bg-ecoprint.jpg");
-  background-position: center center;
-  min-height: 300px;
-}
-
-.contact header {
-  background-image: url("../img/bg-contact.jpg");
-  background-position: center center;
-  min-height: 300px;
-}
 
 /* MENUS */
 
@@ -294,21 +267,21 @@ ul.menu-footer {
   border: 1px solid;
   transition: all 0.3s ease-in-out;
   letter-spacing: 2px;
-
   &:focus {
       box-shadow: $focus-box-shadow;
   } 
 }
 
 .btn-azul {
+  @extend .btn ;
   background-color: $primary-color;
   color: #fff;
   border-color: $primary-color;
-
+  
   &:hover {
-    background-color: $secondary-color;
-    color: $primary-color;
-    border-color: $secondary-color;
+    background-color: map-get($btn, background-color);
+    color: map-get($btn, color);
+    border-color: map-get($btn, border-color);
   }
 }
 
@@ -341,6 +314,7 @@ ul.menu-footer {
 /* HOME */
 
 div.products {
+  @include max-width;
 
   .products-item {
 
@@ -430,9 +404,7 @@ ul.icon-grid {
 }
 
 .gallery {
-  width: 1140px;
-  max-width: 100%;
-  margin: 60px auto;
+  @include max-width;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 350px);

@@ -1,3 +1,18 @@
+.home header {
+  background-image: url("../img/bg-home.jpg"); }
+
+.about header {
+  background-image: url("../img/bg-about.jpg"); }
+
+.products header {
+  background-image: url("../img/bg-products.jpg"); }
+
+.ecoprint header {
+  background-image: url("../img/bg-ecoprint.jpg"); }
+
+.contact header {
+  background-image: url("../img/bg-contact.jpg"); }
+
 html {
   scroll-behavior: smooth; }
 
@@ -46,32 +61,12 @@ header {
   height: 30vh;
   min-height: 450px;
   max-height: 530px;
-  background-attachment: fixed; }
-
-.homepage header {
-  background-image: url("../img/bg-home.jpg");
+  background-attachment: fixed;
   background-position: center center;
+  min-height: 300px; }
+
+.home header {
   height: 70vh; }
-
-.about header {
-  background-image: url("../img/bg-about.jpg");
-  background-position: center center;
-  min-height: 300px; }
-
-.products header {
-  background-image: url("../img/bg-products.jpg");
-  background-position: center center;
-  min-height: 300px; }
-
-.ecoprint header {
-  background-image: url("../img/bg-ecoprint.jpg");
-  background-position: center center;
-  min-height: 300px; }
-
-.contact header {
-  background-image: url("../img/bg-contact.jpg");
-  background-position: center center;
-  min-height: 300px; }
 
 /* MENUS */
 .toggle-menu-movil {
@@ -200,7 +195,7 @@ ul.menu-footer {
 .bg-color-azul {
   background-color: #344962; }
 
-.btn {
+.btn, .btn-azul {
   text-transform: uppercase;
   padding: 8px 25px;
   border-radius: 5px;
@@ -209,7 +204,7 @@ ul.menu-footer {
   border: 1px solid;
   transition: all 0.3s ease-in-out;
   letter-spacing: 2px; }
-  .btn:focus {
+  .btn:focus, .btn-azul:focus {
     box-shadow: 0 0 0 0.25rem rgba(41, 69, 102, 0.6); }
 
 .btn-azul {
@@ -242,16 +237,19 @@ ul.menu-footer {
   max-width: 300px; }
 
 /* HOME */
-div.products .products-item a {
-  display: block; }
-  div.products .products-item a img {
-    width: 100%;
-    transition: all 0.3s ease-in-out; }
-    div.products .products-item a img:hover {
-      transform: scale(1.03); }
-
-div.products .products-item a.btn {
-  display: table; }
+div.products {
+  width: 1140px;
+  max-width: 100%;
+  margin: 60px auto; }
+  div.products .products-item a {
+    display: block; }
+    div.products .products-item a img {
+      width: 100%;
+      transition: all 0.3s ease-in-out; }
+      div.products .products-item a img:hover {
+        transform: scale(1.03); }
+  div.products .products-item a.btn, div.products .products-item a.btn-azul {
+    display: table; }
 
 .mission {
   background-size: cover;
@@ -433,7 +431,7 @@ a.btn-whatsapp {
     font-size: 14px; }
   .txt-big {
     font-size: 16px; }
-  .btn {
+  .btn, .btn-azul {
     padding: 8px 15px;
     font-size: 14px; }
   .w-45,
