@@ -1,6 +1,6 @@
-@import 'variables.scss';
-@import 'mixins.scss';
-@import 'maps.scss';
+@import "variables.scss";
+@import "mixins.scss";
+@import "maps.scss";
 
 html {
   scroll-behavior: smooth;
@@ -70,7 +70,6 @@ header {
   height: 70vh;
 }
 
-
 /* MENUS */
 
 .toggle-menu-movil {
@@ -105,12 +104,12 @@ ul.navbar-nav {
       display: inline-block;
 
       &::after {
-          content: "";
-          display: block;
-          width: 0px;
-          height: 2px;
-          background-color: #ffffff;
-          transition: all 0.3s ease-in-out;
+        content: "";
+        display: block;
+        width: 0px;
+        height: 2px;
+        background-color: #ffffff;
+        transition: all 0.3s ease-in-out;
       }
 
       &:hover::after {
@@ -118,7 +117,8 @@ ul.navbar-nav {
       }
     }
     a.active {
-      &:hover::after, &::after  {
+      &:hover::after,
+      &::after {
         width: 100%;
       }
     }
@@ -143,14 +143,14 @@ ul.menu-redes {
   li {
     display: inline-block;
     list-style: none;
-      a {
-        color: #fff;
-        font-size: 25px;
-        padding: 10px;
-        transition: all 0.3s ease-in-out;
-          &:hover {
-            color: $secondary-color;
-          }
+    a {
+      color: #fff;
+      font-size: 25px;
+      padding: 10px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: $secondary-color;
+      }
     }
   }
 }
@@ -159,7 +159,6 @@ header ul.menu-redes {
   right: 0;
   top: 30px;
   li {
-
     a {
       color: #fff;
       font-size: 25px;
@@ -178,7 +177,6 @@ footer ul.menu-redes {
   bottom: 45px;
 
   li {
-
     a {
       color: $secondary-color;
       font-size: 30px;
@@ -267,17 +265,18 @@ ul.menu-footer {
   border: 1px solid;
   transition: all 0.3s ease-in-out;
   letter-spacing: 2px;
+  max-width: 200px;
   &:focus {
-      box-shadow: $focus-box-shadow;
-  } 
+    box-shadow: $focus-box-shadow;
+  }
 }
 
 .btn-azul {
-  @extend .btn ;
+  @extend .btn;
   background-color: $primary-color;
   color: #fff;
   border-color: $primary-color;
-  
+
   &:hover {
     background-color: map-get($btn, background-color);
     color: map-get($btn, color);
@@ -317,7 +316,6 @@ div.products {
   @include max-width;
 
   .products-item {
-
     a {
       display: block;
 
@@ -357,16 +355,6 @@ section.about {
   div {
     display: block;
     margin: auto;
-  }
-}
-
-section#mission {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  div {
-    margin: 80px 0px 40px;
   }
 }
 
@@ -471,7 +459,7 @@ ul.icon-grid {
 
     &:focus {
       box-shadow: $focus-box-shadow;
-    } 
+    }
   }
 
   button {
@@ -509,17 +497,17 @@ a.btn-whatsapp {
   transition: all 0.3s ease-in-out;
 
   &:hover {
-   transform: scale(1.08);
- }
+    transform: scale(1.08);
+  }
 }
 
 /* RESPONSIVE */
 
 @media all and (max-width: 1024px) {
-   header {
-      height: 50vh !important;
-      min-height: 300px;
-   }
+  header {
+    height: 50vh !important;
+    min-height: 300px;
+  }
   .d-desk {
     display: none !important;
   }
@@ -532,19 +520,18 @@ a.btn-whatsapp {
     top: 0px;
   }
   ul.menu {
-      li {
-         display: block;
-         padding: 15px;
-         width: unset;
-      }
-   }
-   header ul.menu-redes {
+    li {
+      display: block;
+      padding: 15px;
+      width: unset;
+    }
+  }
+  header ul.menu-redes {
     top: unset;
     margin: 0px 10px;
     li {
-  
       a {
-        color: rgba(255,255,255,0.75);
+        color: rgba(255, 255, 255, 0.75);
         font-size: 18px;
         padding: 5px;
       }
@@ -560,10 +547,10 @@ a.btn-whatsapp {
     margin-top: 50px;
   }
   ul.icon-grid {
-     li {
-         padding: 0px 10px;
-      }
-   }
+    li {
+      padding: 0px 10px;
+    }
+  }
 }
 
 @media all and (min-width: 769px) {
@@ -647,8 +634,8 @@ a.btn-whatsapp {
       border-right: none;
 
       a {
-         font-size: 12px;
-       }
+        font-size: 12px;
+      }
     }
   }
 

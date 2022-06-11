@@ -1,130 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
-      <title>Ecoprint - Nature Mission 🌻 Art • Decoration • Fashion</title>
-      <meta name="description" content="🌱Natural, ethical and sustainable unique pieces of art, decoration and clothing 👉 Start today making conscious choices✨🌍✨"/>
-      <meta name="keywords" content="Ecoprint canvas, textile art, botanical print, nature decoration, eco clothes, print using plants"/>
-      <meta property="og:title" content="Ecoprint - Nature Mission 🌻 Art • Decoration • Fashion" />
-      <meta property="og:description" content="🌱Natural, ethical and sustainable unique pieces of art, decoration and clothing 👉 Start today making conscious choices✨🌍✨" />
-      <meta property="og:image" content="../img/bg-ecoprint.jpg" />
-      <link rel="icon" type="image/png" href="../img/isologo-nature-mission.png">
-      <link rel="stylesheet" href="../css/styles.css">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,400&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-      <script src="https://use.fontawesome.com/6b62cee439.js"></script>
-   </head>
-   <body class="ecoprint animate__animated animate__fadeIn">
-      <header class="txt-center">
-         <div id="toggle-menu" class="toggle-menu-movil d-movil wow animate__animated animate__fadeInDown"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
-         <nav class="wow animate__animated animate__fadeInDown">
-            <ul class="menu">
-               <li class="d-movil"><a href="../index.html">Home</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="products.html">Products</a></li>
-               <li class="logo d-desk wow animate__animated animate__pulse" data-wow-delay="1s"><a href="../index.html"><img src="../img/isologo-nature-mission.png" width="115px" height="auto"></a></li>
-               <li><a href="ecoprint.html">Ecoprint</a></li>
-               <li><a href="contact.html">Contact</a></li>
-            </ul>
-         </nav>
-         <ul class="menu-redes wow animate__animated animate__fadeInDown">
-            <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.etsy.com/es/shop/NatureMission" target="_blank"><i class="fa fa-shopping-bag"></i></a></li>
-         </ul>
-         <a href="../index.html"><img class="logo-movil d-movil wow animate__animated animate__pulse" data-wow-delay="1s" src="../img/logo-nature-mission-blanco-1.png"></a>
-      </header>
-      <main>
-         <img class="img-divisor d-movil" src="../img/borde-movil.png" width="100%" height="auto">
-         <img class="img-divisor d-desk" src="../img/borde.png" width="100%" height="auto">
-         <section class="p-30 txt-center">
-            <h1 class="wow animate__animated animate__fadeIn" data-wow-offset="200">Ecoprint</h1>
-            <ul class="icon-grid p-30">
-               <li class="wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
-                  <img src="../img/icons/landscape.png" width="100px" height="auto">
-                  <p class="txt-big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus sint illo fuga unde.</p>
-               </li>
-               <li class="wow animate__animated animate__fadeIn" data-wow-delay="1s">
-                  <img src="../img/icons/cooked.png" width="100px" height="auto">
-                  <p class="txt-big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus sint illo fuga unde.</p>
-               </li>
-               <li class="wow animate__animated animate__fadeIn" data-wow-delay="1.5s">
-                  <img src="../img/icons/print.png" width="100px" height="auto">
-                  <p class="txt-big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus sint illo fuga unde.</p>
-               </li>
-            </ul>
-            <h2 class="wow animate__animated animate__fadeIn" data-wow-offset="200">How the magic happens...</h2>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-            <video class="wow animate__animated animate__fadeInUp" data-wow-offset="200" width="300" height="600" controls mute autoplay>
-               <source src="../video/ecoprint-1.mp4" type="video/mp4">
-             Your browser does not support the video tag.
-             </video>
-             <video class="wow animate__animated animate__fadeInUp p-30" data-wow-offset="200" width="300" height="600" controls mute autoplay>
-               <source src="../video/ecoprint-2.mp4" type="video/mp4">
-             Your browser does not support the video tag.
-             </video>
+    <title>Ecoprint - Nature Mission 🌻 Art • Decoration • Fashion</title>
+    <meta name="description" content="🌱Natural, ethical and sustainable unique pieces of art, decoration and clothing in Barcelona 🌍 Worldwide shipping 👉✨Start today making conscious choices✨"/>
+    <meta name="keywords" content="Ecoprint canvas, textile art, botanical print, nature decoration, eco clothes, print using plants"/>
+    <meta property="og:title" content="Ecoprint - Nature Mission 🌻 Art • Decoration • Fashion" />
+    <meta property="og:description" content="🌱Natural, ethical and sustainable unique pieces of art, decoration and clothing in Barcelona 🌍 Worldwide shipping 👉✨Start today making conscious choices✨" />
+    <meta property="og:image" content="../img/bg-ecoprint.jpg" />
+    <link rel="icon" type="image/png" href="../img/isologo-nature-mission.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-            <h2 class="wow animate__animated animate__fadeIn" data-wow-offset="200" >And voilà!</h2>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-            <div class="gallery wow animate__animated animate__fadeIn">
-               <div class="gallery-item">
-                  <img src="../img/ecoprint/products_0012_17.jpg">
-               </div>
-               <div class="gallery-item">
-                  <img src="../img/ecoprint/products_0013_16.jpg">
-               </div>
-               <div class="gallery-item">
-                  <img src="../img/ecoprint/products_0016_13.jpg">
-               </div>
-               <div class="gallery-item">
-                  <img src="../img/ecoprint/products_0021_8.jpg">
-               </div>
-               <div class="gallery-item">
-                  <img src="../img/ecoprint/products_0022_7.jpg">
-               </div>
-               <div class="gallery-item">
-                  <img src="../img/ecoprint/products_0018_11.jpg">
-               </div>
-               <div class="gallery-item">
-                  <img src="../img/ecoprint/products_0023_6.jpg">
-               </div>
-               <div class="gallery-item">
-                  <img src="../img/ecoprint/products_0017_12.jpg">
-               </div>
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/6b62cee439.js"></script>
+ 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+
+  <body class="ecoprint animate__animated animate__fadeIn">
+     
+    <!-- Header -->
+    <header class="text-center">
+      <nav class="navbar navbar-dark navbar-expand-lg wow animate__animated animate__fadeInDown">
+        <div class="container-fluid">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarMain">
+          <ul class="menu navbar-nav">
+            <li class="nav-item d-block d-lg-none"><a href="index.html">Home</a></li>
+            <li class="nav-item" aria-current="page"><a class="active" href="about.html">About</a></li>
+            <li class="nav-item"><a href="products.html">Products</a></li>
+            <li class="nav-item logo d-none d-lg-block wow animate__animated animate__pulse" data-wow-delay="1s"><a href="../index.html"><img src="../img/isologo-nature-mission.png" width="115px" height="auto"></a></li>
+            <li class="nav-item"><a href="ecoprint.html">Ecoprint</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <button class="navbar-toggler position-absolute wow animate__animated animate__fadeInDown" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand d-inline-block d-lg-none mx-auto wow animate__animated animate__pulse" data-wow-delay="1s" href="../index.html"><img src="../img/isologo-nature-mission.png" width="115px" height="auto"></a> 
+        <ul class="menu-redes wow animate__animated animate__fadeInDown">
+          <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.etsy.com/es/shop/NatureMission" target="_blank"><i class="fa fa-shopping-bag"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- /Header -->
+
+    <!-- Main -->
+    <main class="container-fluid">
+
+      <!-- Divider -->
+      <img class="img-divisor d-block d-md-none" src="../img/borde-movil.png" width="100%" height="auto">
+      <img class="img-divisor d-none d-md-block" src="../img/borde.png" width="100%" height="auto">
+
+      <!-- Section 1 -->
+      <section class="row p-5 txt-center">
+        <div class="col-12">
+          <h1 class="wow animate__animated animate__fadeIn" data-wow-offset="200">Ecoprint</h1>
+          <ul class="icon-grid p-5">
+            <li class="wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+              <img class="mb-3" src="../img/icons/landscape.png" width="100px" height="auto">
+              <p class="txt-big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus sint illo fuga unde.</p>
+            </li>
+            <li class="wow animate__animated animate__fadeIn" data-wow-delay="1s">
+              <img class="mb-3" src="../img/icons/cooked.png" width="100px" height="auto">
+              <p class="txt-big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus sint illo fuga unde.</p>
+            </li>
+            <li class="wow animate__animated animate__fadeIn" data-wow-delay="1.5s">
+              <img class="mb-3" src="../img/icons/print.png" width="100px" height="auto">
+              <p class="txt-big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus sint illo fuga unde.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="row p-5 txt-center">
+        <div class="col-12">
+          <h2 class="wow animate__animated animate__fadeIn" data-wow-offset="200">How the magic happens...</h2>
+          <video class="wow animate__animated animate__fadeInUp p-2" data-wow-offset="200" width="300" height="600" controls mute autoplay>
+            <source src="../video/ecoprint-1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video class="wow animate__animated animate__fadeInUp p-2" data-wow-offset="200" width="300" height="600" controls mute autoplay>
+            <source src="../video/ecoprint-2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="row p-5 txt-center">
+        <div class="col-12">
+          <h2 class="wow animate__animated animate__fadeIn mt-5" data-wow-offset="200" >And voilà!</h2>
+
+          <div class="gallery wow animate__animated animate__fadeIn">
+            <div class="gallery-item">
+              <img src="../img/ecoprint/products_0012_17.jpg">
             </div>
-         </section>
-      </main>
-      <img class="img-divisor-2 d-movil" src="../img/borde-2-movil.png" width="100%" height="auto">
-      <img class="img-divisor-2 d-desk" src="../img/borde-2.png" width="100%" height="auto">
-      <footer class="p-30 text-center bg-color-azul">
-         <a class="logo-footer" href="../index.html"><img src="../img/logo-nature-mission-variante-1.png"></a>
-         <ul class="menu-footer">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="ecoprint.html">Ecoprint</a></li>
-            <li><a href="contact.html">Contact</a></li>
-         </ul>
-         <ul class="menu-redes">
-            <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-         </ul>
-         <a class="btn-whatsapp" href="#" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-      </footer>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
-      <script>
-         $( "#toggle-menu" ).click(function() {
-            $( "nav" ).toggle( "slow", function() {
-               // Animation complete.
-            });
-         });
-      </script>   
-            <script src="../js/wow.min.js"></script>
-            <script>
-               new WOW().init();
-            </script>
-   </body>
+            <div class="gallery-item">
+              <img src="../img/ecoprint/products_0013_16.jpg">
+            </div>
+            <div class="gallery-item">
+              <img src="../img/ecoprint/products_0016_13.jpg">
+            </div>
+            <div class="gallery-item">
+              <img src="../img/ecoprint/products_0021_8.jpg">
+            </div>
+            <div class="gallery-item">
+              <img src="../img/ecoprint/products_0022_7.jpg">
+            </div>
+            <div class="gallery-item">
+              <img src="../img/ecoprint/products_0018_11.jpg">
+            </div>
+            <div class="gallery-item">
+              <img src="../img/ecoprint/products_0023_6.jpg">
+            </div>
+            <div class="gallery-item">
+              <img src="../img/ecoprint/products_0017_12.jpg">
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+    </main>
+    <!-- /Main -->
+
+    <!-- Divider -->
+    <img class="img-divisor-2 d-block d-md-none" src="../img/borde-2-movil.png" width="100%" height="auto">
+    <img class="img-divisor-2 d-none d-md-block" src="../img/borde-2.png" width="100%" height="auto">
+
+    <!-- Footer -->
+    <footer class="p-5 text-center bg-color-azul">
+      <a class="logo-footer" href="../index.html"><img src="../img/logo-nature-mission-variante-1.png"></a>
+      <ul class="menu-footer">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="ecoprint.html">Ecoprint</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="menu-redes">
+        <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      </ul>
+      <a class="btn-whatsapp" href="#" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- jQuery + Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Wow -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
 </html>

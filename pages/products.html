@@ -4,167 +4,220 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
       <title>Products - Nature Mission 🌻 Art • Decoration • Fashion</title>
-      <meta name="description" content="🌱Natural, ethical and sustainable unique pieces of art, decoration and clothing 👉 Start today making conscious choices✨🌍✨"/>
+      <meta name="description" content="🌱Natural, ethical and sustainable unique pieces of art, decoration and clothing in Barcelona 🌍 Worldwide shipping 👉✨Start today making conscious choices✨"/>
       <meta name="keywords" content="Ecoprint canvas, textile art, botanical print, nature decoration, eco clothes, print using plants"/>
       <meta property="og:title" content="Products - Nature Mission 🌻 Art • Decoration • Fashion" />
-      <meta property="og:description" content="🌱Natural, ethical and sustainable unique pieces of art, decoration and clothing 👉 Start today making conscious choices✨🌍✨" />
+      <meta property="og:description" content="🌱Natural, ethical and sustainable unique pieces of art, decoration and clothing in Barcelona 🌍 Worldwide shipping 👉✨Start today making conscious choices✨" />
       <meta property="og:image" content="../img/bg-ecoprint.jpg" />
       <link rel="icon" type="image/png" href="../img/isologo-nature-mission.png">
-      <link rel="stylesheet" href="../css/styles.css">
+
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+      <!-- Google Fonts -->
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,400&display=swap" rel="stylesheet">
+      
+      <!-- Animate -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+      <!-- Font Awesome -->
       <script src="https://use.fontawesome.com/6b62cee439.js"></script>
+   
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="../css/styles.css">
    </head>
+
    <body class="products animate__animated animate__fadeIn">
-      <header class="txt-center">
-         <div id="toggle-menu" class="toggle-menu-movil d-movil wow animate__animated animate__fadeInDown"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
-         <nav class="wow animate__animated animate__fadeInDown">
-            <ul class="menu">
-               <li class="d-movil"><a href="../index.html">Home</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="products.html">Products</a></li>
-               <li class="logo d-desk wow animate__animated animate__pulse" data-wow-delay="1s"><a href="../index.html"><img src="../img/isologo-nature-mission.png" width="115px" height="auto"></a></li>
-               <li><a href="ecoprint.html">Ecoprint</a></li>
-               <li><a href="contact.html">Contact</a></li>
-            </ul>
-         </nav>
-         <ul class="menu-redes wow animate__animated animate__fadeInDown">
-            <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.etsy.com/es/shop/NatureMission" target="_blank"><i class="fa fa-shopping-bag"></i></a></li>
-         </ul>
-         <a href="../index.html"><img class="logo-movil d-movil wow animate__animated animate__pulse" data-wow-delay="1s" src="../img/logo-nature-mission-blanco-1.png"></a>
-      </header>
-      <main>
-         <img class="img-divisor d-movil" src="../img/borde-movil.png" width="100%" height="auto">
-         <img class="img-divisor d-desk" src="../img/borde.png" width="100%" height="auto">
-         <section id="#textile-art" class="txt-center">
-            <img class="title-icons wow animate__animated animate__fadeIn" data-wow-offset="150" src="../img/icons/save-the-planet.png" width="100px" height="auto">
-            <h1>Textile Art, Home Deco & Clothing</h1>
-            <p class="txt-big">Mindfully printed textiles for one of a kind designs</p>
-            <div class="products d-desk">
-               <div class="products-item wow animate__animated animate__fadeIn">
-                  <a href="#textile-art"><img src="../img/textile-art.jpg"></a>
-                  <a class="btn btn-azul wow animate__animated animate__fadeInUp" href="#textile-art">Textile Art</a>
+
+    <!-- Header -->
+    <header class="text-center">
+      <nav class="navbar navbar-dark navbar-expand-lg wow animate__animated animate__fadeInDown">
+        <div class="container-fluid">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarMain">
+          <ul class="menu navbar-nav">
+            <li class="nav-item d-block d-lg-none"><a href="index.html">Home</a></li>
+            <li class="nav-item" aria-current="page"><a class="active" href="about.html">About</a></li>
+            <li class="nav-item"><a href="products.html">Products</a></li>
+            <li class="nav-item logo d-none d-lg-block wow animate__animated animate__pulse" data-wow-delay="1s"><a href="../index.html"><img src="../img/isologo-nature-mission.png" width="115px" height="auto"></a></li>
+            <li class="nav-item"><a href="ecoprint.html">Ecoprint</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <button class="navbar-toggler position-absolute wow animate__animated animate__fadeInDown" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand d-inline-block d-lg-none mx-auto wow animate__animated animate__pulse" data-wow-delay="1s" href="../index.html"><img src="../img/isologo-nature-mission.png" width="115px" height="auto"></a> 
+        <ul class="menu-redes wow animate__animated animate__fadeInDown">
+          <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.etsy.com/es/shop/NatureMission" target="_blank"><i class="fa fa-shopping-bag"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- /Header -->
+
+    <!-- Main -->
+      <main class="container-fluid">
+
+      <!-- Divider -->
+      <img class="img-divisor d-block d-md-none" src="../img/borde-movil.png" width="100%" height="auto">
+      <img class="img-divisor d-none d-md-block" src="../img/borde.png" width="100%" height="auto">
+
+      <!-- Section 1 -->
+      <section id="#textile-art" class="row txt-center">
+         <div class="col-12">
+         <img class="title-icons mb-3 wow animate__animated animate__fadeIn" data-wow-offset="150" src="../img/icons/save-the-planet.png" width="100px" height="auto">
+         <h1>Textile Art, Home Deco & Clothing</h1>
+         <p class="txt-big">Mindfully printed textiles for one of a kind designs</p>
+         <div class="products row mx-auto d-none d-md-flex">
+         <div class="col-md-4 products-item wow animate__animated animate__fadeIn">
+         <a href="#textile-art"><img src="../img/textile-art.jpg"></a>
+         <a class="btn btn-azul" href="#textile-art">Textile Art</a>
+         </div>
+         <div class="col-md-4 products-item wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+         <a href="#home-deco"><img src="../img/home-deco.jpg"></a>
+         <a class="btn btn-azul" href="#home-deco">Home Deco</a>
+         </div>
+         <div class="col-md-4 products-item wow animate__animated animate__fadeIn" data-wow-delay="1s">
+         <a href="#clothing"><img src="../img/clothing.jpg"></a>
+         <a class="btn btn-azul" href="#clothing">Clothing</a>
+         </div>
+         </div>
+         </div>
+      </section>
+
+      <!-- Divider -->
+      <img class="img-divisor-2 d-block d-md-none" src="../img/borde-2-movil.png" width="100%" height="auto">
+      <img class="img-divisor-2 d-none d-md-block" src="../img/borde-2.png" width="100%" height="auto">
+
+      <!-- CTA -->
+      <section class="row cta-shop txt-center p-5">
+         <div class="col-12 p-5">
+            <h2 class="wow animate__animated animate__fadeIn" data-wow-offset="100">Visit my Etsy shop</h2>
+            <a class="btn btn-azul wow animate__animated animate__fadeInUp d-inline-block" href="https://www.etsy.com/es/shop/NatureMission">Visit Now</a>
+         </div>
+      </section>
+
+      <!-- Divider -->
+      <img class="img-divisor d-block d-md-none" src="../img/borde-movil.png" width="100%" height="auto">
+      <img class="img-divisor d-none d-md-block" src="../img/borde.png" width="100%" height="auto">
+
+      <!-- Textile Art -->
+      <section id="textile-art" class="row txt-center">
+         <div class="col-12 p-5">
+            <img class="title-icons mb-3 wow animate__animated animate__fadeIn" data-wow-offset="150" src="../img/icons/art.png" width="100px" height="auto">
+            <h2 class="wow animate__animated animate__fadeIn" data-wow-offset="100">Textile Art</h2>
+            <p class="txt-big w-600 wow animate__animated animate__fadeIn" data-wow-offset="100"><p class="txt-big w-600 wow animate__animated animate__fadeIn" data-wow-offset="100"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+            <div class="gallery wow animate__animated animate__fadeIn">
+               <div class="gallery-item">
+                  <img src="../img/art/products_0004_25.jpg">
                </div>
-               <div class="products-item wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
-                  <a href="#home-deco"><img src="../img/home-deco.jpg"></a>
-                  <a class="btn btn-azul wow animate__animated animate__fadeInUp" href="#home-deco">Home Deco</a>
+               <div class="gallery-item">
+                  <img src="../img/art/products_0006_23.jpg">
                </div>
-               <div class="products-item wow animate__animated animate__fadeIn" data-wow-delay="1s">
-                  <a href="#clothing"><img src="../img/clothing.jpg"></a>
-                  <a class="btn btn-azul wow animate__animated animate__fadeInUp" href="#clothing">Clothing</a>
+               <div class="gallery-item">
+                  <img src="../img/art/products_0007_22.jpg">
+               </div>
+               <div class="gallery-item">
+                  <img src="../img/art/products_0009_20.jpg">
+               </div>
+               <div class="gallery-item">
+                  <img src="../img/art/products_0008_21.jpg">
+               </div>
+               <div class="gallery-item">
+                  <img src="../img/art/products_0003_26.jpg">
+               </div>
+               <div class="gallery-item">
+                  <img src="../img/art/products_0000_29.jpg">
+               </div>
+               <div class="gallery-item">
+                  <img src="../img/art/products_0010_19.jpg">
                </div>
             </div>
-         </section>
-            <img class="img-divisor-2 d-movil" src="../img/borde-2-movil.png" width="100%" height="auto">
-            <img class="img-divisor-2 d-desk" src="../img/borde-2.png" width="100%" height="auto">
-            <section class="cta-shop txt-center p-50">
-               <div class="w-600 p-50">
-                  <h2 class="wow animate__animated animate__fadeIn" data-wow-offset="100">Visit my Etsy shop</h2>
-                  <a class="btn btn-azul wow animate__animated animate__fadeInUp" href="https://www.etsy.com/es/shop/NatureMission">Visit Now</a>
+            <a class="btn btn-azul wow animate__animated animate__fadeInUp" href="https://www.etsy.com/es/shop/NatureMission">Shop Now</a>
+         </div>
+      </section>
+
+      <!-- Divider -->
+      <img class="img-divisor-2 d-block d-md-none" src="../img/borde-2-movil.png" width="100%" height="auto">
+      <img class="img-divisor-2 d-none d-md-block" src="../img/borde-2.png" width="100%" height="auto">
+
+      <!-- Home Deco -->
+      <section id="home-deco" class="row txt-center bg-color-amarillo">
+         <div class="col-12 p-5">
+            <img class="title-icons mb-3 wow animate__animated animate__fadeIn" data-wow-offset="150" src="../img/icons/deco.png" width="100px" height="auto">
+            <h2 class="wow animate__animated animate__fadeIn" data-wow-offset="100">Home Deco</h2>
+            <p class="txt-big w-600 wow animate__animated animate__fadeIn" data-wow-offset="100"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="gallery wow animate__animated animate__fadeIn">
+               <div class="gallery-item">
+                  <img src="../img/deco/cushion-1.jpg">
                </div>
-            </section>
-         <img class="img-divisor d-movil" src="../img/borde-movil.png" width="100%" height="auto">
-         <img class="img-divisor d-desk" src="../img/borde.png" width="100%" height="auto">
-         <section id="textile-art" class="txt-center">
-            <div class="p-30">
-               <img class="title-icons wow animate__animated animate__fadeIn" data-wow-offset="150" src="../img/icons/art.png" width="100px" height="auto">
-               <h2 class="wow animate__animated animate__fadeIn" data-wow-offset="100">Textile Art</h2>
-               <p class="txt-big w-600 wow animate__animated animate__fadeIn" data-wow-offset="100"><p class="txt-big w-600 wow animate__animated animate__fadeIn" data-wow-offset="100"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-               <div class="gallery wow animate__animated animate__fadeIn">
-                  <div class="gallery-item">
-                     <img src="../img/art/products_0004_25.jpg">
-                  </div>
-                  <div class="gallery-item">
-                     <img src="../img/art/products_0006_23.jpg">
-                  </div>
-                  <div class="gallery-item">
-                     <img src="../img/art/products_0007_22.jpg">
-                  </div>
-                  <div class="gallery-item">
-                     <img src="../img/art/products_0009_20.jpg">
-                  </div>
-                  <div class="gallery-item">
-                     <img src="../img/art/products_0008_21.jpg">
-                  </div>
-                  <div class="gallery-item">
-                     <img src="../img/art/products_0003_26.jpg">
-                  </div>
-                  <div class="gallery-item">
-                     <img src="../img/art/products_0000_29.jpg">
-                  </div>
-                  <div class="gallery-item">
-                     <img src="../img/art/products_0010_19.jpg">
-                  </div>
+               <div class="gallery-item">
+                  <img src="../img/deco/cushion-2.jpg">
                </div>
-               <a class="btn btn-azul wow animate__animated animate__fadeInUp" href="https://www.etsy.com/es/shop/NatureMission">Shop Now</a>
-            </div>
-            </div>
-         </section><p class="txt-big w-600 wow animate__animated animate__fadeIn" data-wow-offset="100"></p>
-         <img class="img-divisor-2 d-movil" src="../img/borde-2-movil.png" width="100%" height="auto">
-         <img class="img-divisor-2 d-desk" src="../img/borde-2.png" width="100%" height="auto">
-         <section id="home-deco" class="txt-center bg-color-amarillo">
-            <div class="p-30">
-               <img class="title-icons wow animate__animated animate__fadeIn" data-wow-offset="150" src="../img/icons/deco.png" width="100px" height="auto">
-               <h2 class="wow animate__animated animate__fadeIn" data-wow-offset="100">Home Deco</h2>
-               <p class="txt-big w-600 wow animate__animated animate__fadeIn" data-wow-offset="100"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-               <div class="gallery wow animate__animated animate__fadeIn">
-                  <div class="gallery-item">
-                     <img src="../img/deco/cushion-1.jpg">
-                  </div>
-                  <div class="gallery-item">
-                     <img src="../img/deco/cushion-2.jpg">
-                  </div>
-                  <div class="gallery-item">
-                     <img src="../img/deco/cushion-3.jpg">
-                  </div>
+               <div class="gallery-item">
+                  <img src="../img/deco/cushion-3.jpg">
                </div>
-               <a class="btn btn-azul wow animate__animated animate__fadeInUp" href="https://www.etsy.com/es/shop/NatureMission">Shop Now</a>
             </div>
-         </section>
-         <img class="img-divisor d-movil" src="../img/borde-movil.png" width="100%" height="auto">
-         <img class="img-divisor d-desk" src="../img/borde.png" width="100%" height="auto">
-         <section id="clothing" class="txt-center">
-            <div class="p-30">
-               <img class="title-icons wow animate__animated animate__fadeIn" data-wow-offset="150" src="../img/icons/clothing.png" width="100px" height="auto">
-               <h2 class="wow animate__animated animate__fadeIn" data-wow-offset="100">Clothing</h2>
-               <p class="txt-big w-600 wow animate__animated animate__fadeIn" data-wow-offset="100"><p class="txt-big w-600 wow animate__animated animate__fadeIn" data-wow-offset="100"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-               <div class="gallery wow animate__animated animate__fadeIn">
-                  <div class="gallery-item">
-                     <img src="../img/clothing/products_0025_4.jpg">
-                  </div>
-                  <div class="gallery-item">
-                     <img src="../img/clothing/products_0026_3.jpg">
-                  </div>
-                  <div class="gallery-item">
-                     <img src="../img/clothing/products_0027_2.jpg">
-                  </div>
-                  <div class="gallery-item">
-                     <img src="../img/clothing/products_0028_1.jpg">
-                  </div>
-                  <div class="gallery-item">
-                     <img src="../img/clothing/products_0020_9.jpg">
-                  </div>
-                  <div class="gallery-item">
-                     <img src="../img/clothing/products_0015_14.jpg">
-                  </div>
-                  <div class="gallery-item">
-                     <img src="../img/clothing/products_0019_10.jpg">
-                  </div>
-                  <div class="gallery-item">
-                     <img src="../img/clothing/products_0014_15.jpg">
-                  </div>
+            <a class="btn btn-azul wow animate__animated animate__fadeInUp" href="https://www.etsy.com/es/shop/NatureMission">Shop Now</a>
+         </div>
+      </section>
+
+      <!-- Divider -->
+      <img class="img-divisor d-block d-md-none" src="../img/borde-movil.png" width="100%" height="auto">
+      <img class="img-divisor d-none d-md-block" src="../img/borde.png" width="100%" height="auto">
+
+      <!-- Clothing -->
+      <section id="clothing" class="row txt-center">
+         <div class="col-12 p-5">
+            <img class="title-icons mb-3 wow animate__animated animate__fadeIn" data-wow-offset="150" src="../img/icons/clothing.png" width="100px" height="auto">
+            <h2 class="wow animate__animated animate__fadeIn" data-wow-offset="100">Clothing</h2>
+            <p class="txt-big w-600 wow animate__animated animate__fadeIn" data-wow-offset="100"><p class="txt-big w-600 wow animate__animated animate__fadeIn" data-wow-offset="100"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+            <div class="gallery wow animate__animated animate__fadeIn">
+               <div class="gallery-item">
+                  <img src="../img/clothing/products_0025_4.jpg">
                </div>
-               <a class="btn btn-azul wow animate__animated animate__fadeInUp" href="https://www.etsy.com/es/shop/NatureMission">Shop Now</a>
+               <div class="gallery-item">
+                  <img src="../img/clothing/products_0026_3.jpg">
+               </div>
+               <div class="gallery-item">
+                  <img src="../img/clothing/products_0027_2.jpg">
+               </div>
+               <div class="gallery-item">
+                  <img src="../img/clothing/products_0028_1.jpg">
+               </div>
+               <div class="gallery-item">
+                  <img src="../img/clothing/products_0020_9.jpg">
+               </div>
+               <div class="gallery-item">
+                  <img src="../img/clothing/products_0015_14.jpg">
+               </div>
+               <div class="gallery-item">
+                  <img src="../img/clothing/products_0019_10.jpg">
+               </div>
+               <div class="gallery-item">
+                  <img src="../img/clothing/products_0014_15.jpg">
+               </div>
             </div>
-         </section>
+            
+            <a class="btn btn-azul wow animate__animated animate__fadeInUp" href="https://www.etsy.com/es/shop/NatureMission">Shop Now</a>
+         </div>
+      </section>
+
       </main>
-      <img class="img-divisor-2 d-movil" src="../img/borde-2-movil.png" width="100%" height="auto">
-      <img class="img-divisor-2 d-desk" src="../img/borde-2.png" width="100%" height="auto">
-      <footer class="p-30 text-center bg-color-azul">
+      <!-- /Main -->
+
+      <!-- Divider -->
+      <img class="img-divisor-2 d-block d-md-none" src="../img/borde-2-movil.png" width="100%" height="auto">
+      <img class="img-divisor-2 d-none d-md-block" src="../img/borde-2.png" width="100%" height="auto">
+
+      <!-- Footer -->
+      <footer class="p-5 text-center bg-color-azul">
          <a class="logo-footer" href="../index.html"><img src="../img/logo-nature-mission-variante-1.png"></a>
          <ul class="menu-footer">
             <li><a href="../index.html">Home</a></li>
@@ -179,17 +232,17 @@
          </ul>
          <a class="btn-whatsapp" href="#" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
       </footer>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
-      <script>
-         $( "#toggle-menu" ).click(function() {
-            $( "nav" ).toggle( "slow", function() {
-               // Animation complete.
-            });
-         });
-      </script>   
-            <script src="../js/wow.min.js"></script>
-            <script>
-               new WOW().init();
-            </script>
+      <!-- /Footer -->
+
+      <!-- jQuery + Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script> 
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      <!-- Wow -->
+         <script src="../js/wow.min.js"></script>
+         <script>
+            new WOW().init();
+         </script>
    </body>
 </html>
