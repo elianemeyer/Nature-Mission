@@ -2,7 +2,8 @@
 
 function promo1() {
 
-    let cantProductos = parseInt(prompt("How many products are you buying? \nUse numbers")); 
+    for (let i = 0; i < 7; i++) {
+        let cantProductos = parseInt(prompt("How many products are you buying? \nUse numbers")); 
 
         // 0 Productos
         if (cantProductos == 0){
@@ -11,7 +12,7 @@ function promo1() {
         
         // 1 Producto
         else if (cantProductos == 1){ 
-            alert("Thank you! :) \n Pss! You can access to a 10% OFF if you buy 2 or more products.");
+            alert("Pss! You can access to a 10% OFF if you buy 2 or more products.");
         }
         
         // Más de 1 Producto
@@ -22,8 +23,9 @@ function promo1() {
             alert("The total with the disccount is $" + totalProdDesc + " Enjoy :)");
         }    
         else {
-            alert("Refresh the page and try again answering just with numbers, please! ;)");
-        }        
+            alert("Try again answering just with numbers, please! ;)");
+        }   
+    }     
 
 }
 
