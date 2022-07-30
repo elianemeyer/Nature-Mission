@@ -38,7 +38,14 @@ p {
   font-weight: 300; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #344962; }
+
+a:hover {
+  color: #dfc096; }
+
+.small, small {
+  font-size: 0.63em; }
 
 .txt-center {
   text-align: center; }

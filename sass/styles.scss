@@ -33,6 +33,15 @@ p {
 
 a {
   text-decoration: none;
+  color: $primary-color;
+}
+
+a:hover {
+  color: $secondary-color;
+}
+
+.small, small {
+  font-size: 0.63em;
 }
 
 .txt-center {
