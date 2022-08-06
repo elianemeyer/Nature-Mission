@@ -29,4 +29,28 @@ function promo1() {
 
 }
 
-promo1();
+//promo1();
+
+// Array de productos por categorías
+
+const cuadros = ["Tigre", "Margaritas", "Mandalas", "Cienpiés", "Círculo", "Atardecer"];
+const deco = ["Cushion", "Cushion Mandala"];
+const ropa= ["T-shirt 1", "T-shirt 2", "T-shirt 3", "Hut"];
+
+// Nuevo array con todos los productos
+
+let todosProd = cuadros.concat(deco).concat(ropa);
+
+console.log( todosProd );
+
+// Cantidad por categorías 
+let cantCuadros = cuadros.length;
+let cantDeco = deco.length;
+let cantRopa = ropa.length;
+
+console.log( 'Total de cuadros: ' + cantCuadros + '\nTotal de deco: ' +   cantDeco + '\nTotal de ropa: ' + cantRopa);
+
+// Cantidad total de productos
+let cantTotalProd = todosProd.length;
+
+console.log( 'Total de productos: ' + cantTotalProd );
