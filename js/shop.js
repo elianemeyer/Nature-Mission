@@ -2,13 +2,18 @@
 
 class Product{
     constructor (name, price, category, shippingCost) {
+        this.
         this.name = name;
         this.price  = parseFloat(price);
         this.category = category;
-        //this.image = image;
-        //this.description = description;
+        this.image = image;
+        this.description = description;
         this.shippingCost = shippingCost;
         this.sold = false;
+    }
+    calculateIVA() {
+        this.price = this.price * 0.21;
+        console.log("'" + this.name + "' product price with IVA is: €" + this.price);
     }
     addIVA() {
         this.price = this.price + this.price * 0.21;
@@ -46,9 +51,49 @@ const tShirt2 = new Product("T-shirt 2", 50, "clothing", 0);
 const tShirt3 = new Product("T-shirt 3", 50, "clothing", 0);
 const hut     = new Product("Hut", 65, "clothing", 0);
 
+// Products array by category
+
+const canvas = ["Tigre" , "Margaritas" , "Mandalas" , "Cienpiés" , "Círculo" , "Atardecer"];
+const deco = ["Cushion" , "Cushion Mandala"];
+const clothing= ["T-shirt 1" , "T-shirt 2" , "T-shirt 3" , "Hut"];
+/*
+console.log("All canvas products are: " + canvas);
+console.log("All deco products are: " + deco);
+console.log("All clothing products are: " + clothing);
+*/
+
+
+// New array with all products
+
+let allProds = canvas.concat(deco).concat(clothing);
+
+/*
+console.log( allProds );
+*/
+
+// Quantity by category 
+/*
+let cantCanvas = canvas.length;
+let cantDeco = deco.length;
+let cantClothing = clothing.length;
+
+console.log( 'Total quantity of canvas products: ' + cantCanvas + '\nTotal quantity of  deco products: ' +   cantDeco + '\nTotal quantity of clothing products: ' + cantClothing);
+*/
+
+// Total quantity of products
+/*
+let quantityAllProd = allProds.length;
+
+console.log( 'Total quantity of products: ' + quantityAllProd );
+*/
+
+// Add to cart 
+
+
 
 // "Shopping Cart" functions
 
+/*
 // Calculate IVA
 tigre.addIVA();
 
@@ -57,7 +102,7 @@ cienpies.purchase();
 
 // Show detailed total product price
 hut.totalPrice(); 
-
+*/
 
 
 // Promo 10%OFF
@@ -92,35 +137,4 @@ function promo1() {
 }
 
 
-promo1();
-
-
-
-// Products array by category
-
-const canvas = ["Tigre" , "Margaritas" , "Mandalas" , "Cienpiés" , "Círculo" , "Atardecer"];
-const deco = ["Cushion" , "Cushion Mandala"];
-const clothing= ["T-shirt 1" , "T-shirt 2" , "T-shirt 3" , "Hut"];
-
-console.log("All canvas products are: " + canvas);
-console.log("All deco products are: " + deco);
-console.log("All clothing products are: " + clothing);
-
-// New array with all products
-
-let allProds = canvas.concat(deco).concat(clothing);
-
-console.log( allProds );
-
-// Quantity by category 
-let cantCanvas = canvas.length;
-let cantDeco = deco.length;
-let cantClothing = clothing.length;
-
-console.log( 'Total quantity of canvas products: ' + cantCanvas + '\nTotal quantity of  deco products: ' +   cantDeco + '\nTotal quantity of clothing products: ' + cantClothing);
-
-// Total quantity of products
-let quantityAllProd = allProds.length;
-
-console.log( 'Total quantity of products: ' + quantityAllProd );
-
+//promo1();
