@@ -244,6 +244,9 @@ ul.menu-footer {
 .w-300 {
   max-width: 300px; }
 
+.text-primary {
+  color: #344962 !important; }
+
 /* HOME */
 div.products {
   width: 1140px;
@@ -482,3 +485,131 @@ a.btn-whatsapp {
     text-align: center; }
     footer ul.menu-redes a {
       font-size: 25px; } }
+
+/* SHOPPING CART */
+.progress {
+  height: 2px;
+  background-color: #ccc; }
+
+.progress div {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.progress .progress-bar {
+  width: 40%; }
+
+#details {
+  min-height: 300px; }
+
+input {
+  border: none;
+  outline: none; }
+
+.form-group .d-flex {
+  border: 1px solid #ddd; }
+
+.form-group .d-flex input {
+  width: 95%; }
+
+.form-group .d-flex:hover {
+  color: #000;
+  cursor: pointer;
+  border: 1px solid #344962; }
+
+select {
+  width: 100%;
+  padding: 8px 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px; }
+
+input[type="checkbox"] + label {
+  font-size: 0.85rem;
+  font-weight: 600; }
+
+#address,
+#cart,
+#summary {
+  padding: 20px 50px; }
+
+#address .d-md-flex p.text-justify,
+#register p.text-muted {
+  margin: 0; }
+
+#register {
+  background-color: #d9ecf2; }
+
+#register a {
+  text-decoration: none;
+  color: #333; }
+
+#cart,
+#summary {
+  max-width: 500px; }
+
+.h6 {
+  font-size: 1.2rem;
+  font-weight: 700; }
+
+.h6 a {
+  text-decoration: none;
+  font-size: 1rem; }
+
+.item img {
+  object-fit: cover;
+  border-radius: 5px; }
+
+.item {
+  position: relative; }
+
+.number {
+  position: absolute;
+  font-weight: 800;
+  color: #fff;
+  background-color: #344962;
+  padding-left: 7px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 25px;
+  height: 25px;
+  top: -5px;
+  right: -5px; }
+
+#cart ~ p.text-muted {
+  margin: 0;
+  font-size: 0.9rem; }
+
+#register {
+  width: 50%; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .progress .progress-bar {
+    width: 33%; }
+  #cart,
+  #summary {
+    max-width: 100%; } }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .progress .progress-bar {
+    width: 29%; }
+  #cart,
+  #summary {
+    max-width: 100%; }
+  .wrapper div.h5.large,
+  .wrapper .row + div.text-muted {
+    display: none; }
+  .buttons {
+    width: 100%; } }
+
+@media (max-width: 575px) {
+  .progress .progress-bar {
+    width: 38%; }
+  #cart,
+  #summary {
+    max-width: 100%; }
+  #register {
+    width: 100%; } }
+
+@media (max-width: 375px) {
+  .progress .progress-bar {
+    width: 35%; } }
