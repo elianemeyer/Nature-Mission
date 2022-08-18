@@ -164,7 +164,7 @@ btnSaveBillInfo.addEventListener("click", showInfo)
 
 function showInfo(e){
     e.preventDefault();
-    userDetails.innerHTML = "<h4>Your billing information is: </h4><br/><ul><li>Name: " +userName.value+ "<li>E-mail: " +userEmail.value+ "</li><li>Address: " +userAddress.value+ "</li><li>ZIP Code: " +userZip.value+ "</li><li>City:" +userCity.value+ "</li><li>Country: " +userCountry.value+ "</li></ul>";
+    userDetails.innerHTML = "<h4>Your billing information is: </h4><br/><ul><li>Name: " +userName.value+ "<li>E-mail: " +userEmail.value+ "</li><li>Address: " +userAddress.value+ "</li><li>ZIP Code: " +userZip.value+ "</li><li>City: " +userCity.value+ "</li><li>Country: " +userCountry.value+ "</li></ul>";
 }
 
 // Delete info local storage & DOM
