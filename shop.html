@@ -26,7 +26,7 @@
    <body class="home animate__animated animate__fadeIn">
       <!-- Header -->
       <header class="text-center">
-         <nav class="navbar navbar-dark navbar-expand-lg wow animate__animated animate__fadeInDown">
+         <nav id="navbar" class="navbar navbar-dark navbar-expand-lg wow animate__animated animate__fadeInDown fixed-top">
             <div class="container-fluid">
             <div class="collapse navbar-collapse justify-content-center" id="navbarMain">
                <ul class="menu navbar-nav">
@@ -47,10 +47,10 @@
                <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                <li><a href="https://www.etsy.com/es/shop/NatureMission" target="_blank"><i class="fa fa-shopping-bag"></i></a></li>
-               <li id="menu-shopping-cart"><a href="shop/shopping-cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+               <li id="menu-shopping-cart"><a href="shop/shopping-cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i><div id="prodsInCart" class="d-inline"></div></a></li>
             </ul>
          </nav>
-         <img class="wow animate__animated animate__fadeIn animate__pulse" data-wow-delay="1s" style="margin-top: 60px; max-width: 80%;" src="./img/logo-nature-mission-blanco.png" width="650px" height="auto">
+         <img class="wow animate__animated animate__fadeIn animate__pulse" data-wow-delay="1s" style="margin-top: 200px; max-width: 80%;" src="./img/logo-nature-mission-blanco.png" width="650px" height="auto">
       </header>
       <!-- /Header -->
       <!-- Main -->
@@ -63,384 +63,16 @@
             <img class="d-block mx-auto wow animate__animated animate__fadeIn" data-wow-offset="150" src="./img/icons/hands.svg" style="width:80px;">
             <h1 class="wow animate__animated animate__fadeIn" data-wow-offset="100">SHOP</h1>
             <p class="txt-big wow animate__animated animate__fadeIn" data-wow-offset="100">Mindfully printed textiles for one of a kind designs</p>
+            <button id="cleanStorage" class="btn btn-sm btn-azul d-none" href="#">Clean Storage</button>
+            
          </section>
          <!-- Divider -->
          <img class="img-divisor-2 d-block d-md-none" src="./img/borde-2-movil.png" width="100%" height="auto">
          <img class="img-divisor-2 d-none d-md-block" src="./img/borde-2.png" width="100%" height="auto">
          <!--Section: Products v.3-->
          <section class="container text-center mb-4">
-            <!--Grid row-->
-            <div class="row wow fadeIn">
-               <!--Grid column-->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card product-item" id="">
-                     <!--Card image-->
-                     <div class="product-image-container">
-                        <img src="./img/shop/lienzo-tigre.jpg" class="product-image card-img-top" alt="">
-                     </div>
-                     <!--Card image-->
-                     <!--Card content-->
-                     <div class="card-body text-center">
-                        <!--Category & Title-->
-                        <a href="" class="grey-text">
-                           <strong>
-                              <h5 class="product-name">Tigre</h5>
-                           </strong>
-                        </a>
-                        <h5 class="small product-description">
-                           <a href="" class="text-muted">Black leaves canvas / Botanical wall art canvas / abstract print canvas / large home wall decor / ecoprint textile art</a>
-                        </h5>
-                        <h4 class="product-price">
-                           €250.00                
-                        </h4>
-                        <button class="btn btn-sm btn-azul" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-                     </div>
-                     <!--Card content-->
-                  </div>
-                  <!--Card-->
-               </div>
-               <!--Grid column-->
-               <!--Grid column-->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card product-item" id="">
-                     <!--Card image-->
-                     <div class="product-image-container">
-                        <img src="./img/shop/lienzo-margaritas.jpg" class="product-image card-img-top" alt="">
-                     </div>
-                     <!--Card image-->
-                     <!--Card content-->
-                     <div class="card-body text-center">
-                        <!--Category & Title-->
-                        <a href="" class="grey-text">
-                           <strong>
-                              <h5 class="product-name">Margaritas</h5>
-                           </strong>
-                        </a>
-                        <h5 class="small product-description">
-                           <a href="" class="text-muted">Black leaves canvas / Botanical wall art canvas / abstract print canvas / large home wall decor / ecoprint textile art</a>
-                        </h5>
-                        <h4 class="product-price">
-                           €135.00                
-                        </h4>
-                        <button class="btn btn-sm btn-azul" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-                     </div>
-                     <!--Card content-->
-                  </div>
-                  <!--Card-->
-               </div>
-               <!--Grid column-->
-               <!--Grid column-->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card product-item" id="">
-                     <!--Card image-->
-                     <div class="product-image-container">
-                        <img src="./img/shop/lienzo-mandalas.jpg" class="product-image card-img-top" alt="">
-                     </div>
-                     <!--Card image-->
-                     <!--Card content-->
-                     <div class="card-body text-center">
-                        <!--Category & Title-->
-                        <a href="" class="grey-text">
-                           <strong>
-                              <h5 class="product-name">Mandalas</h5>
-                           </strong>
-                        </a>
-                        <h5 class="small product-description">
-                           <a href="" class="text-muted">Black leaves canvas / Botanical wall art canvas / abstract print canvas / large home wall decor / ecoprint textile art</a>
-                        </h5>
-                        <h4 class="product-price">
-                           €185.00                
-                        </h4>
-                        <button class="btn btn-sm btn-azul" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-                     </div>
-                     <!--Card content-->
-                  </div>
-                  <!--Card-->
-               </div>
-               <!--Grid column-->
-               <!--Fourth column-->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card product-item" id="">
-                     <!--Card image-->
-                     <div class="product-image-container">
-                        <img src="./img/shop/lienzo-cienpies.jpg" class="product-image card-img-top" alt="">
-                     </div>
-                     <!--Card image-->
-                     <!--Card content-->
-                     <div class="card-body text-center">
-                        <!--Category & Title-->
-                        <a href="" class="grey-text">
-                           <strong>
-                              <h5 class="product-name">Cienpiés</h5>
-                           </strong>
-                        </a>
-                        <h5 class="small product-description">
-                           <a href="" class="text-muted">Black leaves canvas / Botanical wall art canvas / abstract print canvas / large home wall decor / ecoprint textile art</a>
-                        </h5>
-                        <h4 class="product-price">
-                           €135.00                
-                        </h4>
-                        <button class="btn btn-sm btn-azul" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-                     </div>
-                     <!--Card content-->
-                  </div>
-                  <!--Card-->
-               </div>
-               <!--Fourth column-->
-            </div>
-            <!--Grid row-->
-            <!--Grid row-->
-            <div class="row wow fadeIn">
-               <!--Grid column-->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card product-item" id="">
-                     <!--Card image-->
-                     <div class="product-image-container">
-                        <img src="./img/shop/lienzo-circulo.jpg" class="product-image card-img-top" alt="">
-                     </div>
-                     <!--Card image-->
-                     <!--Card content-->
-                     <div class="card-body text-center">
-                        <!--Category & Title-->
-                        <a href="" class="grey-text">
-                           <strong>
-                              <h5 class="product-name">Círculo</h5>
-                           </strong>
-                        </a>
-                        <h5 class="small product-description">
-                           <a href="" class="text-muted">Black leaves canvas / Botanical wall art canvas / abstract print canvas / large home wall decor / ecoprint textile art</a>
-                        </h5>
-                        <h4 class="product-price">
-                           €155.00                
-                        </h4>
-                        <button class="btn btn-sm btn-azul" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-                     </div>
-                     <!--Card content-->
-                  </div>
-                  <!--Card-->
-               </div>
-               <!--Grid column-->
-               <!--Grid column-->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card product-item" id="">
-                     <!--Card image-->
-                     <div class="product-image-container">
-                        <img src="./img/shop/lienzo-hojas-agua.jpg" class="product-image card-img-top" alt="">
-                     </div>
-                     <!--Card image-->
-                     <!--Card content-->
-                     <div class="card-body text-center">
-                        <!--Category & Title-->
-                        <a href="" class="grey-text">
-                           <strong>
-                              <h5 class="product-name">Atardecer</h5>
-                           </strong>
-                        </a>
-                        <h5 class="small product-description">
-                           <a href="" class="text-muted">Black leaves canvas / Botanical wall art canvas / abstract print canvas / large home wall decor / ecoprint textile art</a>
-                        </h5>
-                        <h4 class="product-price">
-                           €185.00                
-                        </h4>
-                        <button class="btn btn-sm btn-azul" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-                     </div>
-                     <!--Card content-->
-                  </div>
-                  <!--Card-->
-               </div>
-               <!--Grid column-->
-               <!--Grid column-->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card product-item" id="">
-                     <!--Card image-->
-                     <div class="product-image-container">
-                        <img src="./img/shop/cojin-hojas.jpg" class="product-image card-img-top" alt="">
-                     </div>
-                     <!--Card image-->
-                     <!--Card content-->
-                     <div class="card-body text-center">
-                        <!--Category & Title-->
-                        <a href="" class="grey-text">
-                           <strong>
-                              <h5 class="product-name">Cushion</h5>
-                           </strong>
-                        </a>
-                        <h5 class="small product-description">
-                           <a href="" class="text-muted">Rustic hemp pillow cover / organic cushion cover / Botanical printed cushion case / Decorative sofa pillow cover</a>
-                        </h5>
-                        <h4 class="product-price">
-                           €95.00                
-                        </h4>
-                        <button class="btn btn-sm btn-azul" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-                     </div>
-                     <!--Card content-->
-                  </div>
-                  <!--Card-->
-               </div>
-               <!--Grid column-->
-               <!--Fourth column-->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card product-item" id="">
-                     <!--Card image-->
-                     <div class="product-image-container">
-                        <img src="./img/shop/cojin-mandala.jpg" class="product-image card-img-top" alt="">
-                     </div>
-                     <!--Card image-->
-                     <!--Card content-->
-                     <div class="card-body text-center">
-                        <!--Category & Title-->
-                        <a href="" class="grey-text">
-                           <strong>
-                              <h5 class="product-name">Cushion Mandala</h5>
-                           </strong>
-                        </a>
-                        <h5 class="small product-description">
-                           <a href="" class="text-muted">Rustic hemp pillow cover / organic cushion cover / Botanical printed cushion case / Decorative sofa pillow cover</a>
-                        </h5>
-                        <h4 class="product-price">
-                           €115.00                
-                        </h4>
-                        <button class="btn btn-sm btn-azul" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-                     </div>
-                     <!--Card content-->
-                  </div>
-                  <!--Card-->
-               </div>
-               <!--Fourth column-->
-            </div>
-            <!--Grid row-->
-            <!--Grid row-->
-            <div class="row wow fadeIn">
-               <!--Grid column-->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card product-item" id="">
-                     <!--Card image-->
-                     <div class="product-image-container">
-                        <img src="./img/shop/camiseta-1.jpg" class="product-image card-img-top" alt="">
-                     </div>
-                     <!--Card image-->
-                     <!--Card content-->
-                     <div class="card-body text-center">
-                        <!--Category & Title-->
-                        <a href="" class="grey-text">
-                           <strong>
-                              <h5 class="product-name">T-shirt 1</h5>
-                           </strong>
-                        </a>
-                        <h5 class="small product-description">
-                           <a href="" class="text-muted">Ethnic African inspiration t-shirt / Earth tones / organic cotton t-shirt / natural hand printed shirt / one of a kind</a>
-                        </h5>
-                        <h4 class="product-price">
-                           €50.00
-                        </h4>
-                        <button class="btn btn-sm btn-azul" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-                     </div>
-                     <!--Card content-->
-                  </div>
-                  <!--Card-->
-               </div>
-               <!--Grid column-->
-               <!--Grid column-->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card product-item" id="">
-                     <!--Card image-->
-                     <div class="product-image-container">
-                        <img src="./img/shop/camiseta-2.jpg" class="product-image card-img-top" alt="">
-                     </div>
-                     <!--Card image-->
-                     <!--Card content-->
-                     <div class="card-body text-center">
-                        <!--Category & Title-->
-                        <a href="" class="grey-text">
-                           <strong>
-                              <h5 class="product-name">T-shirt 2</h5>
-                           </strong>
-                        </a>
-                        <h5 class="small product-description">
-                           <a href="" class="text-muted">Ethnic African inspiration t-shirt / Earth tones / organic cotton t-shirt / natural hand printed shirt / one of a kind</a>
-                        </h5>
-                        <h4 class="product-price">
-                           €50.00
-                        </h4>
-                        <button class="btn btn-sm btn-azul" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-                     </div>
-                     <!--Card content-->
-                  </div>
-                  <!--Card-->
-               </div>
-               <!--Grid column-->
-               <!--Grid column-->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card product-item" id="">
-                     <!--Card image-->
-                     <div class="product-image-container">
-                        <img src="./img/shop/camiseta-3.jpg" class="product-image card-img-top" alt="">
-                     </div>
-                     <!--Card image-->
-                     <!--Card content-->
-                     <div class="card-body text-center">
-                        <!--Category & Title-->
-                        <a href="" class="grey-text">
-                           <strong>
-                              <h5 class="product-name">T-shirt 3</h5>
-                           </strong>
-                        </a>
-                        <h5 class="small product-description">
-                           <a href="" class="text-muted">Ethnic African inspiration t-shirt / Earth tones / organic cotton t-shirt / natural hand printed shirt / one of a kind</a>
-                        </h5>
-                        <h4 class="product-price">
-                           €50.00
-                        </h4>
-                        <button class="btn btn-sm btn-azul" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-                     </div>
-                     <!--Card content-->
-                  </div>
-                  <!--Card-->
-               </div>
-               <!--Grid column-->
-               <!--Fourth column-->
-               <div class="col-lg-3 col-md-6 mb-4">
-                  <!--Card-->
-                  <div class="card product-item" id="">
-                     <!--Card image-->
-                     <div class="product-image-container">
-                        <img src="./img/shop/sombrero.jpg" class="product-image card-img-top" alt="">
-                     </div>
-                     <!--Card image-->
-                     <!--Card content-->
-                     <div class="card-body text-center">
-                        <!--Category & Title-->
-                        <a href="" class="grey-text">
-                           <strong>
-                              <h5 class="product-name">Hut</h5>
-                           </strong>
-                        </a>
-                        <h5 class="small product-description">
-                           <a href="" class="text-muted">Ecoprint bucket hat, Unisex summer hat, cotton bucket hat, botanical print hat <br/><br/></a>
-                        </h5>
-                        <h4 class="product-price">
-                           €65.00
-                        </h4>
-                        <button class="btn btn-sm btn-azul" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</button>
-                     </div>
-                     <!--Card content-->
-                  </div>
-                  <!--Card-->
-               </div>
-               <!--Fourth column-->
-            </div>
-            <!--Grid row-->
+            <div id="cartAlerts"></div>
+            <div id="products" class="row wow fadeIn"></div>
          </section>
          <!--Section: Products v.3-->
          <!-- Divider -->
@@ -513,6 +145,20 @@
          new WOW().init();
       </script>
       <!-- Shop -->
-      <script src="js/shop.js"></script>
+      <script src="app/data/products.js" type="module"></script>
+      <script src="app/shop.js" type="module"></script>
+
+      <script>
+      window.addEventListener("scroll", scrollnav);
+
+         function scrollnav() {
+         let y = window.scrollY;
+         if (y > 1) {
+            document.getElementById("navbar").style.backgroundColor = "#344962";
+         } else {
+            document.getElementById("navbar").style.backgroundColor = "";
+         }
+         }
+      </script>
    </body>
 </html>

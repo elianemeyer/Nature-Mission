@@ -486,6 +486,19 @@ a.btn-whatsapp {
     footer ul.menu-redes a {
       font-size: 25px; } }
 
+/* SHOP */
+#prodsInCart span {
+  background: #dfc096;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  margin-left: -10px;
+  line-height: 20px;
+  color: #344962;
+  font-size: 12px; }
+
 /* SHOPPING CART */
 .progress {
   height: 2px;

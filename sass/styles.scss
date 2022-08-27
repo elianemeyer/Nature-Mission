@@ -664,6 +664,23 @@ a.btn-whatsapp {
   }
 }
 
+/* SHOP */ 
+
+#prodsInCart {
+  span {
+    background: $secondary-color;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    margin-left: -10px;
+    line-height: 20px;
+    color: $primary-color;
+    font-size: 12px;
+  }
+}
+
 /* SHOPPING CART */
 
 .progress {
