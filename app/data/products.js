@@ -158,19 +158,32 @@ function deleteStorage(e){
 }
 */
 
-// Shop Cart
+// SHOP CART
 
 export const shopCart = [];
 const cartAlertsDiv = document.getElementById("cartAlerts");
 const cartIconMenu = document.getElementById("prodsInCart");
+const numProdCart = "0";
+
+// Products in cart in menu
+
+const numProdCartLocal = localStorage.setItem("numProdCart", numProdCart);
+
+function showProdCartMenu(){
+    cartIconMenu.innerHTML = `<span>${numProdCartLocal}</span>`;
+}
+
+showProdCartMenu();
+
 // Add to cart function
 
 prodDiv.addEventListener("click", addToCart);
 
 function addToCart(e){
-    //Cancelamos el comportamiento del evento
+
     e.preventDefault();
-    //Obtenemos el elemento desde el cual se disparó el evento
+
+    //Get clicked element
     let clickedProd = e.target
     let idclickedProd = e.target.id
     let nameClickedProd = e.target.name
@@ -178,17 +191,27 @@ function addToCart(e){
     if (clickedProd.tagName === "BUTTON") {
         shopCart.push(idclickedProd); 
 
-        const cantprodCart = shopCart.length;
-        
-    cartAlertsDiv.innerHTML += `<div class="alert alert-primary fade show" role="alert">
-    ${nameClickedProd} product added to shopping cart!
-  </div>`;
+        localStorage.setItem("shopCart", shopCart);
 
-    cartIconMenu.innerHTML = `<span>${cantprodCart}</span>
-    </div>`;
+        const numProdCart = shopCart.length;
+        const numProdCartLocal = localStorage.setItem("numProdCart", numProdCart);
+
+        
+        //cartAlertsDiv.innerHTML += `<div class="alert alert-primary fade show" role="alert">${nameClickedProd} product added to shopping cart!</div>`;
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: `${nameClickedProd} product added to shopping cart!`,
+            showConfirmButton: false,
+            timer: 1500
+          })
+
+        cartIconMenu.innerHTML = `<span>${numProdCart}</span>`;
     }
     console.log(shopCart);
 }
+
+
 
 
 /*
