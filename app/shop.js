@@ -1,38 +1,56 @@
-// Acciones
+import { Product } from "./data/productClass.js"
 
 
+export const products = [];
 
 
-// Promo 10%OFF
+export const prodDiv = document.getElementById("products")
 
-function promo1() {
 
-    for (let i = 0; i < 1; i++) {   
-        let quantityProds = parseInt(prompt("How many products are you buying? \nUse numbers")); 
+// Ask for Products
 
-        // 0 Products
-        if (quantityProds == 0){
-            alert("That's good, just buy what you really like. \n I hope you find something you love from my shop next time :)");
-        }
+const askProducts = async () => {
+    const resp = await fetch('app/data/data.JSON')
+    const data = await resp.json() // Parsear
+   
+    data.forEach((product) => {
         
-        // 1 Product
-        else if (quantityProds == 1){ 
-            alert("Pss! You can access to a 10% OFF if you buy 2 or more products.");
-        }
-        
-        // More than 1 Product
-        else if (quantityProds > 1){ 
-            let totalProds = parseInt(prompt("Cool! Buying " + quantityProds + " products you have a 10% OFF! \n" + "How much is the total of your shop?"));      
-            let totalProdsOff = totalProds * 0.9
-        
-            alert("The total with the disccount is $" + totalProdsOff + " Enjoy :)");
-        }    
-        else {
-            alert("Try again answering just with numbers, please! ;)");
-        }   
-    }     
+            //HTML for each product added - Warning!! Use += 
+            prodDiv.innerHTML += `<!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4">
+            <!--Card-->
+            <div class="card product-item" id="prod-${product.id}">
+                <!--Card image-->
+                <div class="product-image-container">
+                    <img src="./img/shop/${product.image}" class="product-image card-img-top" alt="">
+                </div>
+                <!--Card image-->
+                <!--Card content-->
+                <div class="card-body text-center">
+                    <!--Category & Title-->
+                    <a href="" class="grey-text">
+                        <strong>
+                        <h5 class="product-name">${product.name}</h5>
+                        </strong>
+                    </a>
+                    <h5 class="small product-description">
+                        <a href="" class="text-muted">Black leaves canvas / Botanical wall art canvas / abstract print canvas / large home wall decor / ecoprint textile art</a>
+                    </h5>
+                    <h4 class="product-price">
+                        €${product.price}               
+                    </h4>
+                    <button id="${product.id}" name="${product.name}" class="btn btn-sm btn-azul"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                </div>
+                <!--Card content-->
+            </div>
+            <!--Card-->
+            </div>
+            <!--Grid column-->`;
+    })
 
+    products.push(data);
 }
-//promo1();
 
+askProducts()
 
+console.log(products)

@@ -1,0 +1,121 @@
+[
+    {
+        "id": 0,
+        "name": "Tigre",
+        "price": 250,
+        "category": "canvas",
+        "shippingCost": 0,
+        "description": "", 
+        "image": "lienzo-tigre.jpg"
+    },
+
+    {
+        "id": 1,
+        "name": "Margaritas",
+        "price": 135,
+        "category": "canvas",
+        "shippingCost": 0,
+        "description": "", 
+        "image": "lienzo-margaritas.jpg" 
+    },
+
+    {
+        "id": 2,
+        "name": "Mandalas",
+        "price": 185,
+        "category": "canvas",
+        "shippingCost": 0,
+        "description": "", 
+        "image": "lienzo-mandalas.jpg"
+    },
+
+    {
+        "id": 3,
+        "name": "Cienpiés",
+        "price": 135,
+        "category": "canvas",
+        "shippingCost": 0,
+        "description": "", 
+        "image":  "lienzo-cienpies.jpg" 
+    },
+
+    {
+        "id": 4,
+        "name": "Círculo",
+        "price": 155,
+        "category": "canvas",
+        "shippingCost": 0,
+        "description": "", 
+        "image": "lienzo-circulo.jpg"
+    },
+
+    {
+        "id": 5,
+        "name": "Atardecer",
+        "price": 185,
+        "category": "canvas",
+        "shippingCost": 0,
+        "description": "", 
+        "image": "lienzo-hojas-agua.jpg"
+    },
+
+    {
+        "id": 6,
+        "name": "Cushion",
+        "price": 95,
+        "category": "canvas",
+        "shippingCost": 0,
+        "description": "", 
+        "image": "cojin-hojas.jpg"
+    },
+
+    {
+        "id": 7,
+        "name": "Cushion Mandala",
+        "price": 115,
+        "category": "deco",
+        "shippingCost": 0,
+        "description": "", 
+        "image": "cojin-mandala.jpg"
+    },
+
+    {
+        "id": 8,
+        "name": "T-shirt 1",
+        "price": 50,
+        "category": "clothing",
+        "shippingCost": 0,
+        "description": "", 
+        "image": "camiseta-1.jpg"
+    },
+
+    {
+        "id": 9,
+        "name": "T-shirt 2",
+        "price": 50,
+        "category": "clothing",
+        "shippingCost": 0,
+        "description": "", 
+        "image": "camiseta-2.jpg"
+    },
+    
+    {
+        "id": 10,
+        "name": "T-shirt 3",
+        "price": 50,
+        "category": "clothing",
+        "shippingCost": 0,
+        "description": "", 
+        "image": "camiseta-3.jpg"
+    },
+
+    {
+        "id": 11,
+        "name": "Hut",
+        "price": 65,
+        "category": "clothing",
+        "shippingCost": 0,
+        "description": "", 
+        "image": "sombrero.jpg"
+    }
+]

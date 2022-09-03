@@ -161,7 +161,7 @@ function deleteStorage(e){
 // SHOP CART
 
 export const shopCart = [];
-const cartAlertsDiv = document.getElementById("cartAlerts");
+//const cartAlertsDiv = document.getElementById("cartAlerts");
 const cartIconMenu = document.getElementById("prodsInCart");
 const numProdCart = "0";
 
