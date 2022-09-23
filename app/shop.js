@@ -3,7 +3,7 @@ import { Product } from "./data/productClass.js"
 
 export const products = [];
 
-
+// DOM 
 export const prodDiv = document.getElementById("products")
 
 
@@ -53,4 +53,4 @@ const askProducts = async () => {
 
 askProducts()
 
-console.log(products)
+//console.log(products)

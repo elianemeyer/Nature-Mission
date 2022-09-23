@@ -2,17 +2,22 @@ import { prodDiv } from "./shop.js"
 
 // SHOP CART
 
-export const shopCart = [];
+export const shopCart = JSON.parse(localStorage.getItem("shopCartLocal")) || [];
+export const shopCartLocal = localStorage.getItem("shopCartLocal", shopCart);
+export const shopCartJSON = JSON.stringify(shopCartLocal);
 
+export const totalProdCart = shopCart.length;
+export const totalProdCartLocal = localStorage.getItem("totalProdCartLocal", totalProdCart);
+export const totalProdCartJSON = JSON.stringify(totalProdCartLocal);
+
+//DOM
 const cartIconMenu = document.getElementById("prodsInCart");
-const numProdCart = "0";
 
 
-// Products in cart in menu
-const numProdCartLocal = localStorage.setItem("numProdCart", numProdCart);
+// Products in menu cart icon
 
 function showProdCartMenu(){
-    cartIconMenu.innerHTML = `<span>${numProdCartLocal}</span>`;
+    cartIconMenu.innerHTML = `<span>${totalProdCart}</span>`;
 }
 
 showProdCartMenu();
@@ -32,13 +37,17 @@ function addToCart(e){
     let nameClickedProd = e.target.name
 
     if (clickedProd.tagName === "BUTTON") {
+
+        //Add product ID to array & local
         shopCart.push(idclickedProd); 
+        localStorage.setItem("shopCartLocal", JSON.stringify(shopCart));
 
-        localStorage.setItem("shopCart", shopCart);
+        //Update total cart value & local
+        const totalProdCart = shopCart.length;
+        localStorage.setItem("totalProdCartLocal", JSON.stringify(shopCart.length));
+        //const totalProdCartJSON = JSON.stringify(totalProdCartLocal);
 
-        const numProdCart = shopCart.length;
-        const numProdCartLocal = localStorage.setItem("numProdCart", numProdCart);
-
+        // Alert user of product added
         Swal.fire({
             position: 'center',
             icon: 'success',
@@ -47,8 +56,7 @@ function addToCart(e){
             timer: 1500
           })
 
-        cartIconMenu.innerHTML = `<span>${numProdCart}</span>`;
+        // Show cart lenght in menu shop icon  
+        cartIconMenu.innerHTML = `<span>${totalProdCart}</span>`;
     }
-    console.log(shopCart);
 }
-
