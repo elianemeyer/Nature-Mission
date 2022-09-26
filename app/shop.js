@@ -1,6 +1,5 @@
 import { Product } from "./data/productClass.js"
 
-
 export const products = [];
 
 // DOM 
@@ -39,7 +38,7 @@ const askProducts = async () => {
                     <h4 class="product-price">
                         €${product.price}               
                     </h4>
-                    <button id="${product.id}" name="${product.name}" class="btn btn-sm btn-azul"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                    <button id="${product.id}" name="${product.name}" class="btn-shop btn btn-sm btn-azul"><i class="fa fa-shopping-cart"></i> Add to cart</button>
                 </div>
                 <!--Card content-->
             </div>
